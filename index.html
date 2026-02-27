@@ -12,8 +12,6 @@ body{font-family:'Inter',sans-serif;background:#f5f6fa;color:#1a1a2e;font-size:1
 ::-webkit-scrollbar{width:5px;height:5px}
 ::-webkit-scrollbar-thumb{background:#d1d5db;border-radius:3px}
 .app{display:flex;min-height:100vh}
-
-/* SIDEBAR */
 .sidebar{width:230px;background:#fff;border-right:1px solid #e5e7eb;position:fixed;top:0;left:0;bottom:0;z-index:100;display:flex;flex-direction:column;box-shadow:2px 0 8px rgba(0,0,0,0.04)}
 .logo{padding:20px;border-bottom:1px solid #e5e7eb;display:flex;align-items:center;gap:10px}
 .logo-icon{width:36px;height:36px;background:#4f46e5;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px;flex-shrink:0}
@@ -27,8 +25,6 @@ body{font-family:'Inter',sans-serif;background:#f5f6fa;color:#1a1a2e;font-size:1
 .nav-item .ico{font-size:16px;width:20px;text-align:center}
 .sidebar-footer{padding:14px 16px;border-top:1px solid #e5e7eb;font-size:11px;color:#9ca3af;display:flex;align-items:center;gap:6px;font-family:'JetBrains Mono',monospace}
 .dot{width:7px;height:7px;background:#10b981;border-radius:50%;box-shadow:0 0 6px #10b981}
-
-/* MAIN */
 .main{margin-left:230px;flex:1;min-height:100vh;display:flex;flex-direction:column}
 .topbar{background:#fff;border-bottom:1px solid #e5e7eb;padding:0 28px;height:62px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:90}
 .topbar-title{font-size:18px;font-weight:700;color:#1a1a2e}
@@ -37,49 +33,35 @@ body{font-family:'Inter',sans-serif;background:#f5f6fa;color:#1a1a2e;font-size:1
 .date-chip{font-size:11px;color:#6b7280;background:#f3f4f6;padding:5px 11px;border-radius:6px;font-family:'JetBrains Mono',monospace}
 .btn-new{background:#4f46e5;color:#fff;border:none;border-radius:8px;padding:9px 18px;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:6px;transition:all 0.15s}
 .btn-new:hover{background:#4338ca}
-
-/* PAGES */
 .page{display:none;padding:24px 28px}
 .page.active{display:block}
 .page-title{font-size:24px;font-weight:700;color:#1a1a2e;margin-bottom:2px}
 .page-sub{font-size:11px;color:#9ca3af;font-family:'JetBrains Mono',monospace;letter-spacing:1px;margin-bottom:22px}
-
-/* GRID */
 .g4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px}
 .g3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .g2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px}
 .g2nb{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-
-/* CARDS */
 .card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
 .card-title{font-size:11px;color:#9ca3af;font-family:'JetBrains Mono',monospace;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px;font-weight:500}
 .card-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
-
-/* STAT CARDS */
 .stat{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:18px 20px;transition:transform 0.15s,box-shadow 0.15s;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
 .stat:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,0,0,0.08)}
 .stat-ico{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:17px;margin-bottom:12px}
 .stat-lbl{font-size:10px;color:#9ca3af;font-family:'JetBrains Mono',monospace;letter-spacing:1.5px;margin-bottom:4px;text-transform:uppercase}
 .stat-val{font-size:26px;font-weight:700;line-height:1.1}
 .stat-desc{font-size:11px;color:#6b7280;margin-top:4px}
-.green .stat-ico{background:#ecfdf5} .green .stat-val{color:#10b981}
-.red .stat-ico{background:#fef2f2} .red .stat-val{color:#ef4444}
-.blue .stat-ico{background:#eff6ff} .blue .stat-val{color:#3b82f6}
-.gold .stat-ico{background:#fffbeb} .gold .stat-val{color:#f59e0b}
-.purple .stat-ico{background:#eef2ff} .purple .stat-val{color:#4f46e5}
-
-/* BADGES */
+.green .stat-ico{background:#ecfdf5}.green .stat-val{color:#10b981}
+.red .stat-ico{background:#fef2f2}.red .stat-val{color:#ef4444}
+.blue .stat-ico{background:#eff6ff}.blue .stat-val{color:#3b82f6}
+.gold .stat-ico{background:#fffbeb}.gold .stat-val{color:#f59e0b}
+.purple .stat-ico{background:#eef2ff}.purple .stat-val{color:#4f46e5}
 .badge{display:inline-flex;align-items:center;padding:2px 9px;border-radius:20px;font-size:10px;font-weight:600;font-family:'JetBrains Mono',monospace}
 .bwin{background:#ecfdf5;color:#10b981}
 .bloss{background:#fef2f2;color:#ef4444}
 .bcall{background:#eff6ff;color:#3b82f6}
 .bput{background:#fffbeb;color:#f59e0b}
-
-/* PROGRESS */
 .pbar{height:6px;background:#f3f4f6;border-radius:3px;overflow:hidden;margin-top:5px}
 .pfill{height:100%;border-radius:3px;transition:width 0.8s}
-
-/* TABLE */
 .tbl-wrap{overflow-x:auto}
 table{width:100%;border-collapse:collapse}
 thead th{font-size:10px;color:#9ca3af;font-family:'JetBrains Mono',monospace;letter-spacing:1.5px;text-transform:uppercase;padding:10px 14px;text-align:left;border-bottom:1px solid #e5e7eb;background:#f9fafb;white-space:nowrap}
@@ -89,8 +71,6 @@ tbody td{padding:11px 14px;font-size:13px}
 .mono{font-family:'JetBrains Mono',monospace;font-size:11px;color:#6b7280}
 .pnl-w{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;color:#10b981}
 .pnl-l{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;color:#ef4444}
-
-/* BUTTONS */
 .btn{border:none;border-radius:7px;cursor:pointer;font-size:12px;font-weight:500;padding:7px 13px;transition:all 0.15s}
 .btn-edit{background:#f3f4f6;color:#6b7280;border:1px solid #e5e7eb}
 .btn-edit:hover{background:#e5e7eb;color:#1a1a2e}
@@ -100,20 +80,19 @@ tbody td{padding:11px 14px;font-size:13px}
 .btn-primary:hover{background:#4338ca}
 .btn-secondary{background:#f3f4f6;color:#6b7280;border:1px solid #e5e7eb}
 .btn-secondary:hover{border-color:#d1d5db;color:#1a1a2e}
+.btn-green{background:#10b981;color:#fff;font-weight:600}
+.btn-green:hover{background:#059669}
 .btn-lg{padding:10px 22px;font-size:13px;border-radius:9px}
-
-/* INPUTS */
 .inp,.sel,.ta{background:#fff;border:1px solid #e5e7eb;border-radius:8px;color:#1a1a2e;padding:9px 12px;font-family:'Inter',sans-serif;font-size:14px;width:100%;outline:none;transition:border-color 0.15s,box-shadow 0.15s}
 .inp:focus,.sel:focus,.ta:focus{border-color:#4f46e5;box-shadow:0 0 0 3px rgba(79,70,229,0.1)}
 .inp::placeholder{color:#9ca3af}
 .sel{cursor:pointer;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b7280' d='M6 8L1 3h10z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 11px center;padding-right:32px}
-.ta{resize:vertical;min-height:80px}
+.ta{resize:vertical;min-height:70px}
 label{display:block;font-size:11px;color:#6b7280;font-family:'JetBrains Mono',monospace;letter-spacing:1px;margin-bottom:6px;text-transform:uppercase}
-.fg{margin-bottom:16px}
+.fg{margin-bottom:14px}
 .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
-
-/* TOGGLES */
+.row4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px}
 .tg-group{display:flex;gap:6px;flex-wrap:wrap}
 .tg-btn{padding:7px 14px;border-radius:7px;border:1.5px solid #e5e7eb;background:#fff;color:#6b7280;font-size:12px;font-weight:500;cursor:pointer;transition:all 0.15s}
 .tg-btn:hover{border-color:#d1d5db;color:#1a1a2e}
@@ -123,44 +102,64 @@ label{display:block;font-size:11px;color:#6b7280;font-family:'JetBrains Mono',mo
 .tg-loss{border-color:#ef4444!important;background:#fef2f2!important;color:#ef4444!important}
 .tg-strat{border-color:#4f46e5!important;background:#eef2ff!important;color:#4f46e5!important}
 .tg-emo{border-color:#f59e0b!important;background:#fffbeb!important;color:#f59e0b!important}
-
-/* MODAL */
 .overlay{position:fixed;inset:0;background:rgba(0,0,0,0.4);backdrop-filter:blur(4px);z-index:200;display:flex;align-items:center;justify-content:center;padding:16px;opacity:0;pointer-events:none;transition:opacity 0.2s}
 .overlay.open{opacity:1;pointer-events:all}
-.modal{background:#fff;border-radius:16px;width:100%;max-width:660px;max-height:92vh;overflow-y:auto;padding:28px;transform:translateY(12px);transition:transform 0.25s;box-shadow:0 20px 60px rgba(0,0,0,0.15);border:1px solid #e5e7eb}
+.modal{background:#fff;border-radius:16px;width:100%;max-width:720px;max-height:94vh;overflow-y:auto;padding:28px;transform:translateY(12px);transition:transform 0.25s;box-shadow:0 20px 60px rgba(0,0,0,0.15);border:1px solid #e5e7eb}
 .overlay.open .modal{transform:translateY(0)}
-.modal-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;padding-bottom:16px;border-bottom:1px solid #e5e7eb}
+.modal-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid #e5e7eb}
 .modal-title{font-size:20px;font-weight:700;color:#1a1a2e}
 .modal-close{background:#f3f4f6;border:1px solid #e5e7eb;color:#6b7280;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;transition:all 0.15s}
 .modal-close:hover{background:#fef2f2;color:#ef4444;border-color:#fecaca}
 
+/* TAX BOX */
+.tax-box{background:#f9fafb;border:1px solid #e5e7eb;border-radius:10px;padding:14px 16px;margin-bottom:14px}
+.tax-box-title{font-size:11px;font-weight:600;color:#374151;font-family:'JetBrains Mono',monospace;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between}
+.tax-row{display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:1px solid #f3f4f6;font-size:12px}
+.tax-row:last-child{border-bottom:none;font-weight:600;padding-top:8px;margin-top:4px;border-top:2px solid #e5e7eb}
+.tax-lbl{color:#6b7280}
+.tax-val{font-family:'JetBrains Mono',monospace;font-size:11px;color:#374151}
+.tax-val.negative{color:#ef4444}
+.tax-val.positive{color:#10b981}
+.tax-toggle{font-size:11px;cursor:pointer;color:#4f46e5;background:none;border:none;font-family:'JetBrains Mono',monospace}
+
 /* PNL PREVIEW */
-.pnl-prev{padding:12px 16px;border-radius:9px;margin-bottom:16px;display:none;align-items:center;justify-content:space-between}
+.pnl-prev{padding:12px 16px;border-radius:9px;margin-bottom:14px;display:none;align-items:center;justify-content:space-between}
 .pnl-prev.win{background:#ecfdf5;border:1px solid #a7f3d0}
 .pnl-prev.loss{background:#fef2f2;border:1px solid #fecaca}
 .pnl-prev-val{font-size:22px;font-weight:700;font-family:'JetBrains Mono',monospace}
 .pnl-prev.win .pnl-prev-val{color:#10b981}
 .pnl-prev.loss .pnl-prev-val{color:#ef4444}
+.pnl-prev-net{font-size:11px;font-family:'JetBrains Mono',monospace;margin-top:2px}
+
+/* MULTI-TRADE DAY */
+.day-session{border:1px solid #e5e7eb;border-radius:12px;margin-bottom:16px;overflow:hidden}
+.day-header{background:#f9fafb;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;border-bottom:1px solid #e5e7eb}
+.day-header:hover{background:#f3f4f6}
+.day-date{font-weight:700;font-size:14px;color:#1a1a2e}
+.day-summary{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.day-trades-list{padding:0}
+
+/* TRADE CARD in log */
+.trade-row{display:flex;align-items:center;gap:12px;padding:12px 18px;border-bottom:1px solid #f3f4f6;flex-wrap:wrap}
+.trade-row:last-child{border-bottom:none}
+.trade-row:hover{background:#f9fafb}
+.trade-time{font-family:'JetBrains Mono',monospace;font-size:11px;color:#9ca3af;min-width:110px}
+.trade-info{flex:1;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.trade-actions{display:flex;gap:6px;margin-left:auto}
 
 /* FILTERS */
 .filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
 .fsel{background:#fff;border:1px solid #e5e7eb;border-radius:7px;color:#6b7280;padding:7px 28px 7px 11px;font-size:12px;cursor:pointer;outline:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b7280' d='M6 8L1 3h10z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 9px center;transition:border-color 0.15s}
 .fsel:focus{border-color:#4f46e5}
 
-/* EMPTY */
 .empty{text-align:center;padding:50px 20px;color:#9ca3af;font-family:'JetBrains Mono',monospace;font-size:12px}
 .empty-ico{font-size:36px;margin-bottom:10px}
 
-/* RECENT */
-.recent-item{display:flex;align-items:center;justify-content:space-between;padding:11px 0;border-bottom:1px solid #f3f4f6;cursor:pointer;transition:padding 0.12s;flex-wrap:wrap;gap:6px}
-.recent-item:last-child{border-bottom:none}
-.recent-item:hover{padding-left:6px}
-.rl{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.rdate{font-family:'JetBrains Mono',monospace;font-size:11px;color:#9ca3af}
-.ridx{font-weight:600;color:#1a1a2e;font-size:13px}
-.rstrat{font-family:'JetBrains Mono',monospace;font-size:10px;color:#9ca3af;background:#f3f4f6;padding:2px 7px;border-radius:10px}
+.ring-wrap{position:relative;display:inline-block}
+.ring-lbl{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center}
+.ring-val{font-size:26px;font-weight:700;color:#10b981}
+.ring-sub{font-family:'JetBrains Mono',monospace;font-size:9px;color:#9ca3af;letter-spacing:1px}
 
-/* STRAT CARDS */
 .sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:12px}
 .sc{background:#fff;border:1px solid #e5e7eb;border-radius:11px;padding:16px;transition:all 0.15s;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
 .sc:hover{border-color:#d1d5db;box-shadow:0 4px 12px rgba(0,0,0,0.07);transform:translateY(-2px)}
@@ -171,36 +170,27 @@ label{display:block;font-size:11px;color:#6b7280;font-family:'JetBrains Mono',mo
 .sc-bfill{height:100%;border-radius:2px;transition:width 0.8s}
 .sc-del{background:none;border:none;color:#9ca3af;cursor:pointer;font-size:11px;margin-top:6px;font-family:'JetBrains Mono',monospace;padding:0;transition:color 0.15s}
 .sc-del:hover{color:#ef4444}
+.strat-add-row{display:flex;gap:10px;margin-bottom:16px}
 
-/* RING */
-.ring-wrap{position:relative;display:inline-block}
-.ring-lbl{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center}
-.ring-val{font-size:26px;font-weight:700;color:#10b981}
-.ring-sub{font-family:'JetBrains Mono',monospace;font-size:9px;color:#9ca3af;letter-spacing:1px}
-
-/* NOTIF */
-.notif{position:fixed;bottom:20px;right:20px;background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:12px 18px;font-family:'JetBrains Mono',monospace;font-size:12px;z-index:999;transform:translateY(60px);opacity:0;transition:all 0.25s;box-shadow:0 8px 24px rgba(0,0,0,0.12);display:flex;align-items:center;gap:8px}
-.notif.show{transform:translateY(0);opacity:1}
-.notif.success{border-color:#a7f3d0;color:#10b981}
-.notif.error{border-color:#fecaca;color:#ef4444}
-
-/* HAMBURGER */
-.hamburger{display:none;background:none;border:none;cursor:pointer;color:#1a1a2e;font-size:20px;padding:4px}
-
-/* CHART BOX */
-.chart-box{position:relative}
-
-/* INSIGHT CARD */
 .ins-card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:16px 18px;display:flex;align-items:flex-start;gap:12px;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
 .ins-ico{width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
 .ins-title{font-size:13px;font-weight:600;color:#1a1a2e;margin-bottom:3px}
 .ins-text{font-size:12px;color:#6b7280;line-height:1.5}
 
-/* ADD STRAT */
-.strat-add-row{display:flex;gap:10px;margin-bottom:16px}
+.notif{position:fixed;bottom:20px;right:20px;background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:12px 18px;font-family:'JetBrains Mono',monospace;font-size:12px;z-index:999;transform:translateY(60px);opacity:0;transition:all 0.25s;box-shadow:0 8px 24px rgba(0,0,0,0.12);display:flex;align-items:center;gap:8px}
+.notif.show{transform:translateY(0);opacity:1}
+.notif.success{border-color:#a7f3d0;color:#10b981}
+.notif.error{border-color:#fecaca;color:#ef4444}
+.hamburger{display:none;background:none;border:none;cursor:pointer;color:#1a1a2e;font-size:20px;padding:4px}
+.chart-box{position:relative}
+.divider{height:1px;background:#f3f4f6;margin:14px 0}
+
+/* Section label */
+.section-lbl{font-size:10px;font-weight:600;color:#9ca3af;font-family:'JetBrains Mono',monospace;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;padding:8px 0;border-bottom:1px solid #f3f4f6}
 
 @media(max-width:900px){.g4{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr 1fr}.g2{grid-template-columns:1fr}.g2nb{grid-template-columns:1fr}}
-@media(max-width:768px){.sidebar{transform:translateX(-230px)}.sidebar.open{transform:translateX(0)}.main{margin-left:0}.hamburger{display:block}.row2,.row3{grid-template-columns:1fr}}
+@media(max-width:768px){.sidebar{transform:translateX(-230px)}.sidebar.open{transform:translateX(0)}.main{margin-left:0}.hamburger{display:block}.row2,.row3,.row4{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.row2,.row3,.row4{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -209,10 +199,7 @@ label{display:block;font-size:11px;color:#6b7280;font-family:'JetBrains Mono',mo
 <nav class="sidebar" id="sidebar">
   <div class="logo">
     <div class="logo-icon">📈</div>
-    <div>
-      <div class="logo-text">TradePad</div>
-      <div class="logo-sub">PRO v3.0</div>
-    </div>
+    <div><div class="logo-text">TradePad</div><div class="logo-sub">PRO v4.0</div></div>
   </div>
   <div class="nav">
     <div class="nav-section">MAIN</div>
@@ -224,6 +211,7 @@ label{display:block;font-size:11px;color:#6b7280;font-family:'JetBrains Mono',mo
     <button class="nav-item" id="nav-histogram" onclick="showPage('histogram')"><span class="ico">📉</span>Histogram</button>
     <button class="nav-item" id="nav-heatmap" onclick="showPage('heatmap')"><span class="ico">🗓️</span>Calendar</button>
     <button class="nav-item" id="nav-insights" onclick="showPage('insights')"><span class="ico">💡</span>Insights</button>
+    <button class="nav-item" id="nav-tax" onclick="showPage('tax')"><span class="ico">🧾</span>Tax Report</button>
     <div class="nav-section">SETTINGS</div>
     <button class="nav-item" id="nav-strategies" onclick="showPage('strategies')"><span class="ico">🧠</span>Strategies</button>
   </div>
@@ -252,14 +240,8 @@ label{display:block;font-size:11px;color:#6b7280;font-family:'JetBrains Mono',mo
     <div class="g4" id="dash-stats-1"></div>
     <div class="g4" id="dash-stats-2" style="margin-bottom:18px"></div>
     <div class="g2">
-      <div class="card">
-        <div class="card-title">Running P&amp;L Curve</div>
-        <div class="chart-box" style="height:200px"><canvas id="c-pnlcurve"></canvas></div>
-      </div>
-      <div class="card">
-        <div class="card-title">Index Performance</div>
-        <div class="chart-box" style="height:200px"><canvas id="c-index"></canvas></div>
-      </div>
+      <div class="card"><div class="card-title">Running P&amp;L Curve</div><div class="chart-box" style="height:200px"><canvas id="c-pnlcurve"></canvas></div></div>
+      <div class="card"><div class="card-title">Index Performance</div><div class="chart-box" style="height:200px"><canvas id="c-index"></canvas></div></div>
     </div>
     <div class="card">
       <div class="card-header">
@@ -270,10 +252,10 @@ label{display:block;font-size:11px;color:#6b7280;font-family:'JetBrains Mono',mo
     </div>
   </div>
 
-  <!-- TRADE LOG -->
+  <!-- TRADE LOG - grouped by day -->
   <div class="page" id="page-log">
     <div class="page-title">Trade Log</div>
-    <div class="page-sub">FULL HISTORY OF ALL TRADES</div>
+    <div class="page-sub">ALL TRADES GROUPED BY DAY</div>
     <div class="filters">
       <select class="fsel" id="fi-index" onchange="renderLog()">
         <option value="ALL">All Indices</option>
@@ -297,23 +279,10 @@ label{display:block;font-size:11px;color:#6b7280;font-family:'JetBrains Mono',mo
       <select class="fsel" id="fi-sort" onchange="renderLog()">
         <option value="date-desc">Newest First</option>
         <option value="date-asc">Oldest First</option>
-        <option value="pnl-desc">Highest P&amp;L</option>
-        <option value="pnl-asc">Lowest P&amp;L</option>
       </select>
     </div>
-    <div class="card" style="padding:0">
-      <div class="tbl-wrap">
-        <table>
-          <thead><tr>
-            <th>Date</th><th>Index</th><th>Type</th><th>Strategy</th>
-            <th>Entry</th><th>Exit</th><th>Qty</th><th>P&amp;L</th>
-            <th>Result</th><th>Emotion</th><th>Notes</th><th></th>
-          </tr></thead>
-          <tbody id="log-tbody"></tbody>
-        </table>
-        <div id="log-empty" class="empty" style="display:none"><div class="empty-ico">📭</div>No trades match filters.</div>
-      </div>
-    </div>
+    <div id="log-container"></div>
+    <div id="log-empty" class="empty" style="display:none"><div class="empty-ico">📭</div>No trades match filters.</div>
   </div>
 
   <!-- ANALYTICS -->
@@ -321,29 +290,14 @@ label{display:block;font-size:11px;color:#6b7280;font-family:'JetBrains Mono',mo
     <div class="page-title">Analytics</div>
     <div class="page-sub">DEEP PATTERNS IN YOUR TRADING BEHAVIOUR</div>
     <div class="g2">
-      <div class="card">
-        <div class="card-title">Strategy Win Rates</div>
-        <div class="chart-box" style="height:240px"><canvas id="c-strat"></canvas></div>
-      </div>
-      <div class="card">
-        <div class="card-title">Call vs Put Breakdown</div>
-        <div id="callput-data"></div>
-      </div>
+      <div class="card"><div class="card-title">Strategy Win Rates</div><div class="chart-box" style="height:240px"><canvas id="c-strat"></canvas></div></div>
+      <div class="card"><div class="card-title">Call vs Put Breakdown</div><div id="callput-data" style="padding-top:4px"></div></div>
     </div>
     <div class="g2">
-      <div class="card">
-        <div class="card-title">Emotion Impact</div>
-        <div id="emo-data"></div>
-      </div>
-      <div class="card">
-        <div class="card-title">P&amp;L by Index</div>
-        <div class="chart-box" style="height:220px"><canvas id="c-pnlidx"></canvas></div>
-      </div>
+      <div class="card"><div class="card-title">Emotion Impact</div><div id="emo-data" style="padding-top:4px"></div></div>
+      <div class="card"><div class="card-title">P&amp;L by Index</div><div class="chart-box" style="height:220px"><canvas id="c-pnlidx"></canvas></div></div>
     </div>
-    <div class="card" style="margin-top:18px">
-      <div class="card-title">Index Win Rates</div>
-      <div class="g3" id="idx-winrates" style="margin-top:10px"></div>
-    </div>
+    <div class="card" style="margin-top:18px"><div class="card-title">Index Win Rates</div><div class="g3" id="idx-winrates" style="margin-top:10px"></div></div>
   </div>
 
   <!-- WIN RATIO -->
@@ -352,39 +306,18 @@ label{display:block;font-size:11px;color:#6b7280;font-family:'JetBrains Mono',mo
     <div class="page-sub">GRAPHICAL WIN/LOSS PERFORMANCE</div>
     <div class="g2">
       <div class="card" style="display:flex;align-items:center;justify-content:center;flex-direction:column;gap:20px">
-        <div class="ring-wrap">
-          <canvas id="c-ring" width="200" height="200"></canvas>
-          <div class="ring-lbl">
-            <div class="ring-val" id="ring-wr">—</div>
-            <div class="ring-sub">WIN RATE</div>
-          </div>
-        </div>
+        <div class="ring-wrap"><canvas id="c-ring" width="200" height="200"></canvas><div class="ring-lbl"><div class="ring-val" id="ring-wr">—</div><div class="ring-sub">WIN RATE</div></div></div>
         <div style="display:flex;gap:22px">
-          <div style="text-align:center">
-            <div style="font-size:28px;font-weight:700;color:#10b981" id="ring-wins">0</div>
-            <div class="ring-sub">WINS</div>
-          </div>
+          <div style="text-align:center"><div style="font-size:28px;font-weight:700;color:#10b981" id="ring-wins">0</div><div class="ring-sub">WINS</div></div>
           <div style="width:1px;background:#e5e7eb"></div>
-          <div style="text-align:center">
-            <div style="font-size:28px;font-weight:700;color:#ef4444" id="ring-losses">0</div>
-            <div class="ring-sub">LOSSES</div>
-          </div>
+          <div style="text-align:center"><div style="font-size:28px;font-weight:700;color:#ef4444" id="ring-losses">0</div><div class="ring-sub">LOSSES</div></div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-title">Monthly Win Rate Trend</div>
-        <div class="chart-box" style="height:260px"><canvas id="c-monthly"></canvas></div>
-      </div>
+      <div class="card"><div class="card-title">Monthly Win Rate Trend</div><div class="chart-box" style="height:260px"><canvas id="c-monthly"></canvas></div></div>
     </div>
     <div class="g2nb" style="margin-top:18px">
-      <div class="card">
-        <div class="card-title">Streak Stats</div>
-        <div id="streak-stats"></div>
-      </div>
-      <div class="card">
-        <div class="card-title">Win Rate by Day of Week</div>
-        <div class="chart-box" style="height:220px"><canvas id="c-daywin"></canvas></div>
-      </div>
+      <div class="card"><div class="card-title">Streak Stats</div><div id="streak-stats"></div></div>
+      <div class="card"><div class="card-title">Win Rate by Day of Week</div><div class="chart-box" style="height:220px"><canvas id="c-daywin"></canvas></div></div>
     </div>
   </div>
 
@@ -395,37 +328,18 @@ label{display:block;font-size:11px;color:#6b7280;font-family:'JetBrains Mono',mo
     <div class="card" style="margin-bottom:18px">
       <div class="card-header">
         <div class="card-title" style="margin-bottom:0">P&amp;L Frequency Distribution</div>
-        <select class="fsel" id="hist-bins" onchange="renderHistogram()">
-          <option value="10">10 Bins</option>
-          <option value="15" selected>15 Bins</option>
-          <option value="20">20 Bins</option>
-        </select>
+        <select class="fsel" id="hist-bins" onchange="renderHistogram()"><option value="10">10 Bins</option><option value="15" selected>15 Bins</option><option value="20">20 Bins</option></select>
       </div>
       <div class="chart-box" style="height:290px"><canvas id="c-hist"></canvas></div>
     </div>
     <div class="g3" style="margin-bottom:18px">
-      <div class="card">
-        <div class="card-title">Distribution Stats</div>
-        <div id="hist-stats"></div>
-      </div>
-      <div class="card">
-        <div class="card-title">Scatter Plot</div>
-        <div class="chart-box" style="height:200px"><canvas id="c-scatter"></canvas></div>
-      </div>
-      <div class="card">
-        <div class="card-title">Profit Factor</div>
-        <div id="pf-display"></div>
-      </div>
+      <div class="card"><div class="card-title">Distribution Stats</div><div id="hist-stats"></div></div>
+      <div class="card"><div class="card-title">Scatter Plot</div><div class="chart-box" style="height:200px"><canvas id="c-scatter"></canvas></div></div>
+      <div class="card"><div class="card-title">Profit Factor</div><div id="pf-display"></div></div>
     </div>
     <div class="g2nb">
-      <div class="card">
-        <div class="card-title">Win vs Loss Comparison</div>
-        <div class="chart-box" style="height:210px"><canvas id="c-wlcomp"></canvas></div>
-      </div>
-      <div class="card">
-        <div class="card-title">Cumulative P&amp;L by Strategy</div>
-        <div class="chart-box" style="height:210px"><canvas id="c-stratcum"></canvas></div>
-      </div>
+      <div class="card"><div class="card-title">Win vs Loss Comparison</div><div class="chart-box" style="height:210px"><canvas id="c-wlcomp"></canvas></div></div>
+      <div class="card"><div class="card-title">Cumulative P&amp;L by Strategy</div><div class="chart-box" style="height:210px"><canvas id="c-stratcum"></canvas></div></div>
     </div>
   </div>
 
@@ -434,19 +348,10 @@ label{display:block;font-size:11px;color:#6b7280;font-family:'JetBrains Mono',mo
     <div class="page-title">Trading Calendar</div>
     <div class="page-sub">ACTIVITY & PERFORMANCE HEATMAP</div>
     <div class="g2">
-      <div class="card">
-        <div class="card-title">Trade Activity Heatmap (Last 12 Weeks)</div>
-        <div id="heatmap-wrap"></div>
-      </div>
-      <div class="card">
-        <div class="card-title">Monthly P&amp;L Summary</div>
-        <div class="chart-box" style="height:240px"><canvas id="c-monthlypnl"></canvas></div>
-      </div>
+      <div class="card"><div class="card-title">Trade Activity Heatmap (Last 12 Weeks)</div><div id="heatmap-wrap"></div></div>
+      <div class="card"><div class="card-title">Monthly P&amp;L Summary</div><div class="chart-box" style="height:240px"><canvas id="c-monthlypnl"></canvas></div></div>
     </div>
-    <div class="card" style="margin-top:18px">
-      <div class="card-title">Best &amp; Worst Trading Days</div>
-      <div id="best-worst"></div>
-    </div>
+    <div class="card" style="margin-top:18px"><div class="card-title">Best &amp; Worst Trading Days</div><div id="best-worst"></div></div>
   </div>
 
   <!-- INSIGHTS -->
@@ -454,6 +359,26 @@ label{display:block;font-size:11px;color:#6b7280;font-family:'JetBrains Mono',mo
     <div class="page-title">Smart Insights</div>
     <div class="page-sub">OBSERVATIONS FROM YOUR TRADING DATA</div>
     <div class="g2" id="insights-wrap"></div>
+  </div>
+
+  <!-- TAX REPORT -->
+  <div class="page" id="page-tax">
+    <div class="page-title">Tax Report</div>
+    <div class="page-sub">CHARGES, TAXES & NET P&L BREAKDOWN</div>
+    <div class="g4" id="tax-stats" style="margin-bottom:18px"></div>
+    <div class="g2" style="margin-bottom:18px">
+      <div class="card"><div class="card-title">Tax Breakdown Summary</div><div id="tax-breakdown"></div></div>
+      <div class="card"><div class="card-title">Charges Distribution</div><div class="chart-box" style="height:240px"><canvas id="c-taxchart"></canvas></div></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Trade-wise Tax Details</div>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Date</th><th>Time</th><th>Index</th><th>Type</th><th>Gross P&L</th><th>STT</th><th>Brokerage</th><th>GST</th><th>SEBI</th><th>Total Tax</th><th>Net P&L</th></tr></thead>
+          <tbody id="tax-tbody"></tbody>
+        </table>
+      </div>
+    </div>
   </div>
 
   <!-- STRATEGIES -->
@@ -477,15 +402,17 @@ label{display:block;font-size:11px;color:#6b7280;font-family:'JetBrains Mono',mo
 <div class="overlay" id="overlay" onclick="if(event.target===this)closeModal()">
   <div class="modal">
     <div class="modal-header">
-      <div class="modal-title" id="modal-title">Log New Trade</div>
+      <div>
+        <div class="modal-title" id="modal-title">Log New Trade</div>
+        <div style="font-size:11px;color:#9ca3af;margin-top:2px;font-family:'JetBrains Mono',monospace">Ek din mein multiple trades add kar sakte ho</div>
+      </div>
       <button class="modal-close" onclick="closeModal()">✕</button>
     </div>
     <input type="hidden" id="edit-id">
+
+    <!-- DATE & INDEX -->
     <div class="row2" style="margin-bottom:14px">
-      <div class="fg">
-        <label>Date</label>
-        <input type="date" class="inp" id="f-date">
-      </div>
+      <div class="fg"><label>Date</label><input type="date" class="inp" id="f-date"></div>
       <div class="fg">
         <label>Index</label>
         <select class="sel" id="f-index" onchange="onIndexChange()">
@@ -499,10 +426,15 @@ label{display:block;font-size:11px;color:#6b7280;font-family:'JetBrains Mono',mo
         </select>
       </div>
     </div>
-    <div class="fg" id="custom-idx-wrap" style="display:none">
-      <label>Custom Index Name</label>
-      <input class="inp" id="f-custom-idx" placeholder="Enter custom index name...">
+    <div class="fg" id="custom-idx-wrap" style="display:none"><label>Custom Index Name</label><input class="inp" id="f-custom-idx" placeholder="Enter custom index name..."></div>
+
+    <!-- ENTRY & EXIT TIME -->
+    <div class="row2" style="margin-bottom:14px">
+      <div class="fg"><label>Entry Time</label><input type="time" class="inp" id="f-entry-time" value="09:15"></div>
+      <div class="fg"><label>Exit Time</label><input type="time" class="inp" id="f-exit-time" value="15:30"></div>
     </div>
+
+    <!-- TYPE -->
     <div class="fg">
       <label>Option Type</label>
       <div class="tg-group">
@@ -511,25 +443,18 @@ label{display:block;font-size:11px;color:#6b7280;font-family:'JetBrains Mono',mo
       </div>
       <input type="hidden" id="f-type" value="CALL">
     </div>
-    <div class="fg">
-      <label>Strategy</label>
-      <div class="tg-group" id="strat-toggles"></div>
-      <input type="hidden" id="f-strategy">
-    </div>
+
+    <!-- STRATEGY -->
+    <div class="fg"><label>Strategy</label><div class="tg-group" id="strat-toggles"></div><input type="hidden" id="f-strategy"></div>
+
+    <!-- PRICES & QTY -->
     <div class="row3" style="margin-bottom:14px">
-      <div class="fg">
-        <label>Entry Price</label>
-        <input type="number" class="inp" id="f-entry" placeholder="e.g. 22400" oninput="updatePreview()">
-      </div>
-      <div class="fg">
-        <label>Exit Price</label>
-        <input type="number" class="inp" id="f-exit" placeholder="e.g. 22520" oninput="updatePreview()">
-      </div>
-      <div class="fg">
-        <label>Quantity</label>
-        <input type="number" class="inp" id="f-qty" placeholder="e.g. 50" oninput="updatePreview()">
-      </div>
+      <div class="fg"><label>Entry Price</label><input type="number" class="inp" id="f-entry" placeholder="e.g. 22400" oninput="updatePreview()"></div>
+      <div class="fg"><label>Exit Price</label><input type="number" class="inp" id="f-exit" placeholder="e.g. 22520" oninput="updatePreview()"></div>
+      <div class="fg"><label>Quantity (Lots)</label><input type="number" class="inp" id="f-qty" placeholder="e.g. 50" oninput="updatePreview()"></div>
     </div>
+
+    <!-- RESULT -->
     <div class="fg">
       <label>Result</label>
       <div class="tg-group">
@@ -538,17 +463,43 @@ label{display:block;font-size:11px;color:#6b7280;font-family:'JetBrains Mono',mo
       </div>
       <input type="hidden" id="f-result" value="WIN">
     </div>
+
+    <!-- PNL PREVIEW -->
     <div class="pnl-prev win" id="pnl-prev">
       <div>
-        <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#6b7280;letter-spacing:1px">ESTIMATED P&L</div>
-        <div style="font-size:11px;color:#9ca3af">|exit - entry| x qty</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#6b7280;letter-spacing:1px">GROSS P&L</div>
+        <div class="pnl-prev-net" id="pnl-prev-net" style="color:#6b7280">Net after tax: calculating...</div>
       </div>
-      <div class="pnl-prev-val" id="pnl-prev-val">₹0</div>
+      <div>
+        <div class="pnl-prev-val" id="pnl-prev-val">₹0</div>
+      </div>
     </div>
-    <div class="fg">
-      <label>Why I Entered This Trade</label>
-      <textarea class="ta" id="f-reason" placeholder="Describe the setup, confluences, indicators..."></textarea>
+
+    <!-- TAX DISCLOSURE -->
+    <div class="tax-box" id="tax-preview-box" style="display:none">
+      <div class="tax-box-title">
+        <span>🧾 TAX & CHARGES (Estimated)</span>
+        <button class="tax-toggle" onclick="toggleTaxDetail()">Show Details</button>
+      </div>
+      <div id="tax-detail" style="display:none">
+        <div class="tax-row"><span class="tax-lbl">STT (Securities Transaction Tax)</span><span class="tax-val negative" id="tx-stt">—</span></div>
+        <div class="tax-row"><span class="tax-lbl">Brokerage (₹20/order)</span><span class="tax-val negative" id="tx-brok">—</span></div>
+        <div class="tax-row"><span class="tax-lbl">GST on Brokerage (18%)</span><span class="tax-val negative" id="tx-gst">—</span></div>
+        <div class="tax-row"><span class="tax-lbl">SEBI Charges</span><span class="tax-val negative" id="tx-sebi">—</span></div>
+        <div class="tax-row"><span class="tax-lbl">Exchange Charges (NSE)</span><span class="tax-val negative" id="tx-exc">—</span></div>
+        <div class="tax-row"><span class="tax-lbl">Stamp Duty</span><span class="tax-val negative" id="tx-stamp">—</span></div>
+      </div>
+      <div class="tax-row" style="margin-top:4px">
+        <span class="tax-lbl" style="font-weight:600">Total Charges</span>
+        <span class="tax-val negative" id="tx-total" style="font-size:13px">—</span>
+      </div>
+      <div class="tax-row">
+        <span class="tax-lbl" style="font-weight:700;font-size:13px">Net P&L (After Tax)</span>
+        <span id="tx-net" style="font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700">—</span>
+      </div>
     </div>
+
+    <div class="fg"><label>Why I Entered This Trade</label><textarea class="ta" id="f-reason" placeholder="Setup, confluences, indicators..."></textarea></div>
     <div class="fg">
       <label>Emotional State</label>
       <div class="tg-group" id="emo-toggles">
@@ -565,10 +516,7 @@ label{display:block;font-size:11px;color:#6b7280;font-family:'JetBrains Mono',mo
       </div>
       <input type="hidden" id="f-emotion" value="Confident">
     </div>
-    <div class="fg">
-      <label>Post-Trade Notes</label>
-      <textarea class="ta" id="f-notes" placeholder="What went right? What to improve? Lessons..."></textarea>
-    </div>
+    <div class="fg"><label>Post-Trade Notes</label><textarea class="ta" id="f-notes" placeholder="What went right? Lessons..."></textarea></div>
     <div style="display:flex;gap:10px;margin-top:6px">
       <button class="btn btn-primary btn-lg" style="flex:1" onclick="saveTrade()">Save Trade</button>
       <button class="btn btn-secondary btn-lg" onclick="closeModal()">Cancel</button>
@@ -583,8 +531,8 @@ var trades = [];
 var strategies = ['Breakout','Reversal','Trend Following','Scalping','VWAP Bounce','Support/Resistance','Opening Range','Gap Fill','Momentum'];
 var INDICES = ['NIFTY 50','BANKNIFTY','SENSEX','MIDCAP NIFTY','FINNIFTY','BANKES'];
 var COLORS = ['#4f46e5','#10b981','#f59e0b','#ef4444','#3b82f6','#8b5cf6','#ec4899','#14b8a6','#f97316'];
+var taxDetailOpen = false;
 
-// Load from storage
 try {
   var st = localStorage.getItem('tp_trades');
   if (st) trades = JSON.parse(st);
@@ -599,49 +547,46 @@ function save() {
   } catch(e) {}
 }
 
+// ── TAX CALCULATION ──
+// Intraday Options Tax (F&O)
+function calcTax(entry, exit, qty) {
+  var turnover = (entry + exit) * qty;
+  var stt = Math.round(exit * qty * 0.0005 * 100) / 100; // STT on sell side 0.05%
+  var brokerage = 40; // ₹20 per order, 2 orders
+  var gst = Math.round(brokerage * 0.18 * 100) / 100;
+  var sebi = Math.round(turnover * 0.000001 * 100) / 100; // ₹10 per crore
+  var exchange = Math.round(turnover * 0.0000503 * 100) / 100; // NSE F&O
+  var stamp = Math.round(entry * qty * 0.00003 * 100) / 100; // 0.003% on buy
+  var total = stt + brokerage + gst + sebi + exchange + stamp;
+  return { stt: stt, brokerage: brokerage, gst: gst, sebi: sebi, exchange: exchange, stamp: stamp, total: Math.round(total * 100) / 100 };
+}
+
 function calcPnl(t) {
   var diff = Math.abs(t.exit - t.entry) * t.qty;
   return t.result === 'WIN' ? diff : -diff;
 }
 
-function fmt(n) {
-  return '\u20B9' + Math.abs(Math.round(n)).toLocaleString('en-IN');
+function calcNetPnl(t) {
+  var gross = calcPnl(t);
+  var tax = calcTax(t.entry, t.exit, t.qty);
+  return Math.round((gross - tax.total) * 100) / 100;
 }
 
-function fmtS(n) {
-  return (n >= 0 ? '+\u20B9' : '-\u20B9') + Math.abs(Math.round(n)).toLocaleString('en-IN');
-}
-
+function fmt(n) { return '\u20B9' + Math.abs(Math.round(n)).toLocaleString('en-IN'); }
+function fmtS(n) { return (n >= 0 ? '+\u20B9' : '-\u20B9') + Math.abs(Math.round(n)).toLocaleString('en-IN'); }
+function fmtD(n) { return (n >= 0 ? '+\u20B9' : '-\u20B9') + Math.abs(n).toLocaleString('en-IN', {minimumFractionDigits:2,maximumFractionDigits:2}); }
 function getWins() { return trades.filter(function(t){ return t.result === 'WIN'; }); }
 function getLosses() { return trades.filter(function(t){ return t.result === 'LOSS'; }); }
+function getWinRate() { return trades.length ? ((getWins().length / trades.length) * 100).toFixed(1) : '0.0'; }
+function getTotalPnl() { return trades.reduce(function(s,t){ return s + calcPnl(t); }, 0); }
+function getTotalNetPnl() { return trades.reduce(function(s,t){ return s + calcNetPnl(t); }, 0); }
+function getTotalTax() { return trades.reduce(function(s,t){ return s + calcTax(t.entry, t.exit, t.qty).total; }, 0); }
 
-function getWinRate() {
-  if (!trades.length) return '0.0';
-  return ((getWins().length / trades.length) * 100).toFixed(1);
-}
+function destroyChart(id) { var c = Chart.getChart(id); if (c) c.destroy(); }
 
-function getTotalPnl() {
-  return trades.reduce(function(s, t){ return s + calcPnl(t); }, 0);
-}
-
-function destroyChart(id) {
-  var c = Chart.getChart(id);
-  if (c) c.destroy();
-}
-
-var CO = {
-  responsive: true,
-  maintainAspectRatio: false,
-  plugins: { legend: { labels: { color: '#6b7280', font: { family: 'JetBrains Mono', size: 10 } } } },
-  scales: {
-    x: { grid: { color: '#f3f4f6' }, ticks: { color: '#9ca3af', font: { family: 'JetBrains Mono', size: 10 } } },
-    y: { grid: { color: '#f3f4f6' }, ticks: { color: '#9ca3af', font: { family: 'JetBrains Mono', size: 10 } } }
-  }
-};
-
-// ── NAVIGATION ──
+// ── NAV ──
 function showPage(name) {
-  var pages = ['dashboard','log','analytics','winratio','histogram','heatmap','insights','strategies'];
+  var pages = ['dashboard','log','analytics','winratio','histogram','heatmap','insights','tax','strategies'];
   for (var i = 0; i < pages.length; i++) {
     var p = document.getElementById('page-' + pages[i]);
     var n = document.getElementById('nav-' + pages[i]);
@@ -653,23 +598,9 @@ function showPage(name) {
   if (pg) pg.classList.add('active');
   if (nv) nv.classList.add('active');
   document.getElementById('sidebar').classList.remove('open');
-
-  var titles = {
-    dashboard: ['Dashboard', 'OVERVIEW & QUICK STATS'],
-    log: ['Trade Log', 'FULL HISTORY OF ALL TRADES'],
-    analytics: ['Analytics', 'DEEP PATTERNS & BEHAVIOURS'],
-    winratio: ['Win Ratio', 'GRAPHICAL PERFORMANCE'],
-    histogram: ['P&L Histogram', 'DISTRIBUTION ANALYSIS'],
-    heatmap: ['Trading Calendar', 'ACTIVITY HEATMAP'],
-    insights: ['Smart Insights', 'AI-POWERED OBSERVATIONS'],
-    strategies: ['Strategies', 'YOUR STRATEGY LIBRARY']
-  };
+  var titles = {dashboard:['Dashboard','OVERVIEW & QUICK STATS'],log:['Trade Log','ALL TRADES GROUPED BY DAY'],analytics:['Analytics','DEEP PATTERNS'],winratio:['Win Ratio','GRAPHICAL PERFORMANCE'],histogram:['Histogram','P&L DISTRIBUTION'],heatmap:['Calendar','ACTIVITY HEATMAP'],insights:['Insights','AI-POWERED OBSERVATIONS'],tax:['Tax Report','CHARGES & NET P&L'],strategies:['Strategies','STRATEGY LIBRARY']};
   var t = titles[name];
-  if (t) {
-    document.getElementById('topbar-title').textContent = t[0];
-    document.getElementById('topbar-sub').textContent = t[1];
-  }
-
+  if (t) { document.getElementById('topbar-title').textContent = t[0]; document.getElementById('topbar-sub').textContent = t[1]; }
   if (name === 'dashboard') renderDashboard();
   if (name === 'log') renderLog();
   if (name === 'analytics') renderAnalytics();
@@ -677,135 +608,70 @@ function showPage(name) {
   if (name === 'histogram') renderHistogram();
   if (name === 'heatmap') renderHeatmap();
   if (name === 'insights') renderInsights();
+  if (name === 'tax') renderTax();
   if (name === 'strategies') renderStrategies();
 }
 
-function toggleSidebar() {
-  document.getElementById('sidebar').classList.toggle('open');
-}
+function toggleSidebar() { document.getElementById('sidebar').classList.toggle('open'); }
 
-// ── STAT CARD HTML ──
 function statCard(cls, ico, lbl, val, desc) {
-  return '<div class="stat ' + cls + '"><div class="stat-ico">' + ico + '</div>' +
-    '<div class="stat-lbl">' + lbl + '</div>' +
-    '<div class="stat-val">' + val + '</div>' +
-    '<div class="stat-desc">' + desc + '</div></div>';
+  return '<div class="stat ' + cls + '"><div class="stat-ico">' + ico + '</div><div class="stat-lbl">' + lbl + '</div><div class="stat-val">' + val + '</div><div class="stat-desc">' + desc + '</div></div>';
 }
 
 // ── DASHBOARD ──
 function renderDashboard() {
-  var wins = getWins().length;
-  var losses = getLosses().length;
-  var total = trades.length;
-  var wr = getWinRate();
-  var pnl = getTotalPnl();
-
+  var wins = getWins().length, losses = getLosses().length, total = trades.length;
+  var wr = getWinRate(), pnl = getTotalPnl(), netPnl = getTotalNetPnl(), totalTax = getTotalTax();
   document.getElementById('dash-sub').textContent = total + ' TRADES LOGGED';
-
   var pnlCls = pnl >= 0 ? 'green' : 'red';
-  var pnlIco = pnl >= 0 ? '💰' : '📉';
-
-  var s1 = document.getElementById('dash-stats-1');
-  s1.innerHTML =
-    statCard('green', '🏆', 'WIN RATE', wr + '%', wins + 'W / ' + losses + 'L') +
-    statCard(pnlCls, pnlIco, 'TOTAL P&L', fmtS(pnl), 'net profit / loss') +
-    statCard('blue', '📊', 'TOTAL TRADES', total, 'all indices') +
-    (function(){
-      var bestS = getBestStrategy();
-      return statCard('gold', '⭐', 'BEST STRATEGY', bestS.name || '—', bestS.wr ? bestS.wr + '% win rate' : 'no data');
-    })();
-
+  document.getElementById('dash-stats-1').innerHTML =
+    statCard('green','🏆','WIN RATE', wr + '%', wins + 'W / ' + losses + 'L') +
+    statCard(pnlCls, pnl >= 0 ? '💰' : '📉','GROSS P&L', fmtS(pnl), 'before tax') +
+    statCard(pnl >= 0 ? 'green' : 'red','💎','NET P&L', fmtS(netPnl), 'after all charges') +
+    statCard('blue','📊','TOTAL TRADES', total, 'all indices');
   var pnls = trades.map(function(t){ return calcPnl(t); });
-  var best = pnls.length ? Math.max.apply(null, pnls) : 0;
-  var worst = pnls.length ? Math.min.apply(null, pnls) : 0;
-  var avg = pnls.length ? pnls.reduce(function(a,b){ return a+b; }, 0) / pnls.length : 0;
-  var thisMonth = new Date().toISOString().substring(0, 7);
-  var mTrades = trades.filter(function(t){ return t.date.substring(0, 7) === thisMonth; });
+  var best = pnls.length ? Math.max.apply(null,pnls) : 0;
+  var worst = pnls.length ? Math.min.apply(null,pnls) : 0;
+  var avg = pnls.length ? pnls.reduce(function(a,b){ return a+b; },0)/pnls.length : 0;
+  var thisMonth = new Date().toISOString().substring(0,7);
+  var mTrades = trades.filter(function(t){ return t.date.substring(0,7) === thisMonth; });
   var mW = mTrades.filter(function(t){ return t.result === 'WIN'; }).length;
+  document.getElementById('dash-stats-2').innerHTML =
+    statCard('purple','📅','THIS MONTH', mTrades.length + ' trades', mW + 'W / ' + (mTrades.length-mW) + 'L') +
+    statCard('green','🚀','BEST TRADE', best > 0 ? fmt(best) : '—', 'single trade') +
+    statCard('red','⚠️','WORST TRADE', worst < 0 ? fmt(worst) : '—', 'single trade') +
+    statCard('gold','🧾','TOTAL TAXES', fmt(totalTax), 'charges paid');
 
-  var s2 = document.getElementById('dash-stats-2');
-  s2.innerHTML =
-    statCard('purple', '📅', 'THIS MONTH', mTrades.length + ' trades', mW + 'W / ' + (mTrades.length - mW) + 'L') +
-    statCard('green', '🚀', 'BEST TRADE', best > 0 ? fmt(best) : '—', 'single trade') +
-    statCard('red', '⚠️', 'WORST TRADE', worst < 0 ? fmt(worst) : '—', 'single trade') +
-    statCard('blue', '📈', 'AVG P&L', pnls.length ? fmtS(avg) : '—', 'per trade');
-
-  // PnL curve
-  var sorted = trades.slice().sort(function(a, b){ return a.date > b.date ? 1 : -1; });
+  var sorted = trades.slice().sort(function(a,b){ return a.date > b.date ? 1 : -1; });
   var running = 0;
-  var pnlData = sorted.map(function(t, i){ running += calcPnl(t); return running; });
-
+  var pnlData = sorted.map(function(t){ running += calcPnl(t); return running; });
   destroyChart('c-pnlcurve');
   if (sorted.length) {
-    new Chart(document.getElementById('c-pnlcurve'), {
-      type: 'line',
-      data: {
-        labels: sorted.map(function(t, i){ return i + 1; }),
-        datasets: [{ data: pnlData, borderColor: '#4f46e5', backgroundColor: 'rgba(79,70,229,0.06)', borderWidth: 2.5, pointRadius: 3, fill: true, tension: 0.35 }]
-      },
-      options: {
-        responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { display: false }, tooltip: { callbacks: { label: function(ctx){ return fmt(ctx.raw); } } } },
-        scales: {
-          x: { grid: { color: '#f3f4f6' }, ticks: { color: '#9ca3af', font: { family: 'JetBrains Mono', size: 10 } } },
-          y: { grid: { color: '#f3f4f6' }, ticks: { color: '#9ca3af', font: { family: 'JetBrains Mono', size: 10 }, callback: function(v){ return '\u20B9' + v; } } }
-        }
-      }
-    });
+    new Chart(document.getElementById('c-pnlcurve'),{type:'line',data:{labels:sorted.map(function(t,i){return i+1;}),datasets:[{data:pnlData,borderColor:'#4f46e5',backgroundColor:'rgba(79,70,229,0.06)',borderWidth:2.5,pointRadius:3,fill:true,tension:0.35}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){return fmt(ctx.raw);}}}},scales:{x:{grid:{color:'#f3f4f6'},ticks:{color:'#9ca3af',font:{family:'JetBrains Mono',size:10}}},y:{grid:{color:'#f3f4f6'},ticks:{color:'#9ca3af',font:{family:'JetBrains Mono',size:10},callback:function(v){return '\u20B9'+v;}}}}}});
   }
-
-  // Index chart
-  var idxData = INDICES.map(function(idx){
-    return {
-      label: idx.replace(' NIFTY', '').replace('BANKNIFTY', 'BANK'),
-      wins: trades.filter(function(t){ return t.index === idx && t.result === 'WIN'; }).length,
-      losses: trades.filter(function(t){ return t.index === idx && t.result === 'LOSS'; }).length
-    };
-  }).filter(function(d){ return d.wins + d.losses > 0; });
-
+  var idxData = INDICES.map(function(idx){ return {label:idx.replace(' NIFTY','').replace('BANKNIFTY','BANK'),wins:trades.filter(function(t){return t.index===idx&&t.result==='WIN';}).length,losses:trades.filter(function(t){return t.index===idx&&t.result==='LOSS';}).length};}).filter(function(d){return d.wins+d.losses>0;});
   destroyChart('c-index');
   if (idxData.length) {
-    new Chart(document.getElementById('c-index'), {
-      type: 'bar',
-      data: {
-        labels: idxData.map(function(d){ return d.label; }),
-        datasets: [
-          { label: 'Wins', data: idxData.map(function(d){ return d.wins; }), backgroundColor: 'rgba(16,185,129,0.8)', borderRadius: 5 },
-          { label: 'Losses', data: idxData.map(function(d){ return d.losses; }), backgroundColor: 'rgba(239,68,68,0.8)', borderRadius: 5 }
-        ]
-      },
-      options: {
-        responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { labels: { color: '#6b7280', font: { family: 'JetBrains Mono', size: 10 } } } },
-        scales: {
-          x: { grid: { display: false }, ticks: { color: '#9ca3af', font: { family: 'JetBrains Mono', size: 10 } } },
-          y: { grid: { color: '#f3f4f6' }, ticks: { color: '#9ca3af', font: { family: 'JetBrains Mono', size: 10 } } }
-        }
-      }
-    });
+    new Chart(document.getElementById('c-index'),{type:'bar',data:{labels:idxData.map(function(d){return d.label;}),datasets:[{label:'Wins',data:idxData.map(function(d){return d.wins;}),backgroundColor:'rgba(16,185,129,0.8)',borderRadius:5},{label:'Losses',data:idxData.map(function(d){return d.losses;}),backgroundColor:'rgba(239,68,68,0.8)',borderRadius:5}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#6b7280',font:{family:'JetBrains Mono',size:10}}}},scales:{x:{grid:{display:false},ticks:{color:'#9ca3af',font:{family:'JetBrains Mono',size:10}}},y:{grid:{color:'#f3f4f6'},ticks:{color:'#9ca3af',font:{family:'JetBrains Mono',size:10}}}}}});
   }
 
-  // Recent trades
-  var recent = trades.slice().sort(function(a, b){ return a.date > b.date ? -1 : 1; }).slice(0, 6);
+  var recent = trades.slice().sort(function(a,b){ return a.date > b.date ? -1 : 1; }).slice(0,6);
   var rl = document.getElementById('recent-list');
-  if (!recent.length) {
-    rl.innerHTML = '<div class="empty"><div class="empty-ico">📭</div>No trades yet. Log your first trade!</div>';
-    return;
-  }
+  if (!recent.length) { rl.innerHTML = '<div class="empty"><div class="empty-ico">📭</div>No trades yet. Log your first trade!</div>'; return; }
   var html = '';
   for (var i = 0; i < recent.length; i++) {
     var t = recent[i];
     var p = calcPnl(t);
     var pColor = p >= 0 ? '#10b981' : '#ef4444';
-    var tId = t.id;
-    html += '<div class="recent-item" onclick="openEdit(' + tId + ')">';
-    html += '<div class="rl">';
-    html += '<span class="rdate">' + t.date + '</span>';
-    html += '<span class="ridx">' + t.index + '</span>';
+    var timeStr = (t.entryTime || '') + (t.exitTime ? ' → ' + t.exitTime : '');
+    html += '<div style="display:flex;align-items:center;justify-content:space-between;padding:11px 0;border-bottom:1px solid #f3f4f6;cursor:pointer;flex-wrap:wrap;gap:6px" onclick="openEdit(' + t.id + ')">';
+    html += '<div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">';
+    html += '<span style="font-family:JetBrains Mono,monospace;font-size:11px;color:#9ca3af">' + t.date + '</span>';
+    if (timeStr) html += '<span style="font-family:JetBrains Mono,monospace;font-size:10px;color:#9ca3af;background:#f3f4f6;padding:2px 6px;border-radius:4px">' + timeStr + '</span>';
+    html += '<span style="font-weight:600;color:#1a1a2e">' + t.index + '</span>';
     html += '<span class="badge ' + (t.type === 'CALL' ? 'bcall' : 'bput') + '">' + t.type + '</span>';
-    html += '<span class="rstrat">' + t.strategy + '</span>';
-    html += '</div>';
-    html += '<div style="display:flex;align-items:center;gap:10px">';
+    html += '<span style="font-family:JetBrains Mono,monospace;font-size:10px;color:#9ca3af;background:#f3f4f6;padding:2px 7px;border-radius:10px">' + t.strategy + '</span>';
+    html += '</div><div style="display:flex;align-items:center;gap:10px">';
     html += '<span style="font-family:JetBrains Mono,monospace;font-size:12px;font-weight:600;color:' + pColor + '">' + fmtS(p) + '</span>';
     html += '<span class="badge ' + (t.result === 'WIN' ? 'bwin' : 'bloss') + '">' + t.result + '</span>';
     html += '</div></div>';
@@ -814,19 +680,19 @@ function renderDashboard() {
 }
 
 function getBestStrategy() {
-  var best = { name: '', wr: 0 };
+  var best = {name:'',wr:0};
   for (var i = 0; i < strategies.length; i++) {
     var s = strategies[i];
     var st = trades.filter(function(t){ return t.strategy === s; });
     if (!st.length) continue;
     var w = st.filter(function(t){ return t.result === 'WIN'; }).length;
-    var wr = Math.round((w / st.length) * 100);
-    if (wr > best.wr) { best = { name: s, wr: wr }; }
+    var wr = Math.round((w/st.length)*100);
+    if (wr > best.wr) best = {name:s,wr:wr};
   }
   return best;
 }
 
-// ── TRADE LOG ──
+// ── TRADE LOG (Grouped by Day) ──
 function renderLog() {
   var fi = document.getElementById('fi-index').value;
   var fr = document.getElementById('fi-result').value;
@@ -840,855 +706,498 @@ function renderLog() {
     return true;
   });
 
-  filtered.sort(function(a, b){
-    if (fs === 'date-desc') return a.date > b.date ? -1 : 1;
-    if (fs === 'date-asc') return a.date > b.date ? 1 : -1;
-    if (fs === 'pnl-desc') return calcPnl(b) - calcPnl(a);
-    if (fs === 'pnl-asc') return calcPnl(a) - calcPnl(b);
-    return 0;
-  });
+  var container = document.getElementById('log-container');
+  var emptyEl = document.getElementById('log-empty');
 
-  var tb = document.getElementById('log-tbody');
-  var em = document.getElementById('log-empty');
+  if (!filtered.length) { container.innerHTML = ''; emptyEl.style.display = 'block'; return; }
+  emptyEl.style.display = 'none';
 
-  if (!filtered.length) {
-    tb.innerHTML = '';
-    em.style.display = 'block';
-    return;
-  }
-  em.style.display = 'none';
-
-  var html = '';
+  // Group by date
+  var dateMap = {};
   for (var i = 0; i < filtered.length; i++) {
     var t = filtered[i];
-    var p = calcPnl(t);
-    var tId = t.id;
-    html += '<tr>';
-    html += '<td class="mono">' + t.date + '</td>';
-    html += '<td style="font-weight:600">' + t.index + '</td>';
-    html += '<td><span class="badge ' + (t.type === 'CALL' ? 'bcall' : 'bput') + '">' + t.type + '</span></td>';
-    html += '<td style="color:#6b7280;font-size:12px">' + t.strategy + '</td>';
-    html += '<td class="mono">' + Number(t.entry).toLocaleString('en-IN') + '</td>';
-    html += '<td class="mono">' + Number(t.exit).toLocaleString('en-IN') + '</td>';
-    html += '<td class="mono">' + t.qty + '</td>';
-    html += '<td class="' + (p >= 0 ? 'pnl-w' : 'pnl-l') + '">' + fmtS(p) + '</td>';
-    html += '<td><span class="badge ' + (t.result === 'WIN' ? 'bwin' : 'bloss') + '">' + t.result + '</span></td>';
-    html += '<td style="font-size:11px;color:#9ca3af">' + (t.emotion || '—') + '</td>';
-    var note = t.reason ? t.reason.substring(0, 35) + (t.reason.length > 35 ? '…' : '') : '—';
-    html += '<td style="font-size:11px;color:#9ca3af;max-width:140px">' + note + '</td>';
-    html += '<td><div style="display:flex;gap:6px">';
-    html += '<button class="btn btn-edit" onclick="openEdit(' + tId + ')">Edit</button>';
-    html += '<button class="btn btn-del" onclick="delTrade(' + tId + ')">Del</button>';
-    html += '</div></td>';
-    html += '</tr>';
+    if (!dateMap[t.date]) dateMap[t.date] = [];
+    dateMap[t.date].push(t);
   }
-  tb.innerHTML = html;
+
+  var dates = Object.keys(dateMap).sort(function(a,b){ return fs === 'date-asc' ? (a > b ? 1 : -1) : (a > b ? -1 : 1); });
+
+  var html = '';
+  for (var di = 0; di < dates.length; di++) {
+    var date = dates[di];
+    var dayTrades = dateMap[date].slice().sort(function(a,b){
+      var at = a.entryTime || '00:00', bt = b.entryTime || '00:00';
+      return at > bt ? 1 : -1;
+    });
+    var dayPnl = 0, dayWins = 0;
+    for (var ti = 0; ti < dayTrades.length; ti++) { dayPnl += calcPnl(dayTrades[ti]); if(dayTrades[ti].result==='WIN') dayWins++; }
+    var dayNetPnl = dayTrades.reduce(function(s,t){ return s + calcNetPnl(t); }, 0);
+    var dayTax = dayTrades.reduce(function(s,t){ return s + calcTax(t.entry,t.exit,t.qty).total; }, 0);
+    var pnlCol = dayPnl >= 0 ? '#10b981' : '#ef4444';
+    var netCol = dayNetPnl >= 0 ? '#10b981' : '#ef4444';
+    var dayObj = new Date(date);
+    var dayName = dayObj.toLocaleDateString('en-IN',{weekday:'long'});
+
+    html += '<div class="day-session">';
+    html += '<div class="day-header">';
+    html += '<div><div class="day-date">' + dayName + ', ' + date + '</div><div style="font-size:11px;color:#9ca3af;margin-top:1px;font-family:JetBrains Mono,monospace">' + dayTrades.length + ' trade(s) · ' + dayWins + 'W / ' + (dayTrades.length-dayWins) + 'L</div></div>';
+    html += '<div style="display:flex;align-items:center;gap:16px">';
+    html += '<div style="text-align:right"><div style="font-size:10px;color:#9ca3af;font-family:JetBrains Mono,monospace">GROSS</div><div style="font-family:JetBrains Mono,monospace;font-size:13px;font-weight:700;color:' + pnlCol + '">' + fmtS(dayPnl) + '</div></div>';
+    html += '<div style="text-align:right"><div style="font-size:10px;color:#9ca3af;font-family:JetBrains Mono,monospace">NET</div><div style="font-family:JetBrains Mono,monospace;font-size:13px;font-weight:700;color:' + netCol + '">' + fmtS(dayNetPnl) + '</div></div>';
+    html += '<div style="text-align:right"><div style="font-size:10px;color:#9ca3af;font-family:JetBrains Mono,monospace">TAX</div><div style="font-family:JetBrains Mono,monospace;font-size:13px;font-weight:700;color:#ef4444">-' + fmt(dayTax) + '</div></div>';
+    html += '<button class="btn btn-green" style="font-size:11px;padding:6px 12px" onclick="openModalForDate(\'' + date + '\')">+ Add Trade</button>';
+    html += '</div></div>';
+
+    html += '<div class="day-trades-list">';
+    for (var ti2 = 0; ti2 < dayTrades.length; ti2++) {
+      var tr = dayTrades[ti2];
+      var tp = calcPnl(tr);
+      var tnet = calcNetPnl(tr);
+      var ttax = calcTax(tr.entry, tr.exit, tr.qty).total;
+      var tpCol = tp >= 0 ? '#10b981' : '#ef4444';
+      html += '<div class="trade-row">';
+      var ttime = '';
+      if (tr.entryTime || tr.exitTime) { ttime = (tr.entryTime || '--:--') + ' → ' + (tr.exitTime || '--:--'); }
+      html += '<div class="trade-time">' + (ttime || 'No time set') + '</div>';
+      html += '<div class="trade-info">';
+      html += '<span style="font-weight:600;font-size:13px">' + tr.index + '</span>';
+      html += '<span class="badge ' + (tr.type === 'CALL' ? 'bcall' : 'bput') + '">' + tr.type + '</span>';
+      html += '<span style="font-family:JetBrains Mono,monospace;font-size:10px;color:#9ca3af;background:#f3f4f6;padding:2px 7px;border-radius:10px">' + tr.strategy + '</span>';
+      html += '<span class="badge ' + (tr.result === 'WIN' ? 'bwin' : 'bloss') + '">' + tr.result + '</span>';
+      html += '<span style="font-family:JetBrains Mono,monospace;font-size:11px;color:#6b7280">Entry: ' + Number(tr.entry).toLocaleString('en-IN') + ' → Exit: ' + Number(tr.exit).toLocaleString('en-IN') + ' × ' + tr.qty + '</span>';
+      html += '</div>';
+      html += '<div style="display:flex;align-items:center;gap:14px;margin-left:auto">';
+      html += '<div style="text-align:right"><div style="font-size:9px;color:#9ca3af;font-family:JetBrains Mono,monospace">GROSS</div><div style="font-family:JetBrains Mono,monospace;font-size:12px;font-weight:600;color:' + tpCol + '">' + fmtS(tp) + '</div></div>';
+      html += '<div style="text-align:right"><div style="font-size:9px;color:#9ca3af;font-family:JetBrains Mono,monospace">TAX</div><div style="font-family:JetBrains Mono,monospace;font-size:11px;color:#ef4444">-' + fmt(ttax) + '</div></div>';
+      html += '<div style="text-align:right"><div style="font-size:9px;color:#9ca3af;font-family:JetBrains Mono,monospace">NET</div><div style="font-family:JetBrains Mono,monospace;font-size:12px;font-weight:700;color:' + (tnet >= 0 ? '#10b981' : '#ef4444') + '">' + fmtS(tnet) + '</div></div>';
+      html += '<div class="trade-actions"><button class="btn btn-edit" onclick="openEdit(' + tr.id + ')">Edit</button><button class="btn btn-del" onclick="delTrade(' + tr.id + ')">Del</button></div>';
+      html += '</div></div>';
+    }
+    html += '</div></div>';
+  }
+  container.innerHTML = html;
 }
 
 // ── ANALYTICS ──
 function renderAnalytics() {
-  // Strategy chart
   var stratData = [];
   for (var i = 0; i < strategies.length; i++) {
     var s = strategies[i];
     var st = trades.filter(function(t){ return t.strategy === s; });
     if (!st.length) continue;
-    var w = st.filter(function(t){ return t.result === 'WIN'; }).length;
-    stratData.push({ name: s.length > 12 ? s.substring(0, 12) + '…' : s, wins: w, losses: st.length - w });
+    stratData.push({name:s.length>12?s.substring(0,12)+'…':s,wins:st.filter(function(t){return t.result==='WIN';}).length,losses:st.filter(function(t){return t.result==='LOSS';}).length});
   }
   destroyChart('c-strat');
   if (stratData.length) {
-    new Chart(document.getElementById('c-strat'), {
-      type: 'bar',
-      data: {
-        labels: stratData.map(function(d){ return d.name; }),
-        datasets: [
-          { label: 'Wins', data: stratData.map(function(d){ return d.wins; }), backgroundColor: 'rgba(16,185,129,0.8)', borderRadius: 5 },
-          { label: 'Losses', data: stratData.map(function(d){ return d.losses; }), backgroundColor: 'rgba(239,68,68,0.8)', borderRadius: 5 }
-        ]
-      },
-      options: {
-        responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { labels: { color: '#6b7280', font: { family: 'JetBrains Mono', size: 10 } } } },
-        scales: {
-          x: { grid: { display: false }, ticks: { color: '#9ca3af', font: { family: 'JetBrains Mono', size: 10 } } },
-          y: { grid: { color: '#f3f4f6' }, ticks: { color: '#9ca3af', font: { family: 'JetBrains Mono', size: 10 } } }
-        }
-      }
-    });
+    new Chart(document.getElementById('c-strat'),{type:'bar',data:{labels:stratData.map(function(d){return d.name;}),datasets:[{label:'Wins',data:stratData.map(function(d){return d.wins;}),backgroundColor:'rgba(16,185,129,0.8)',borderRadius:5},{label:'Losses',data:stratData.map(function(d){return d.losses;}),backgroundColor:'rgba(239,68,68,0.8)',borderRadius:5}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#6b7280',font:{family:'JetBrains Mono',size:10}}}},scales:{x:{grid:{display:false},ticks:{color:'#9ca3af',font:{family:'JetBrains Mono',size:10}}},y:{grid:{color:'#f3f4f6'},ticks:{color:'#9ca3af',font:{family:'JetBrains Mono',size:10}}}}}});
   }
-
-  // Call vs Put
   var cpHtml = '';
-  var types = ['CALL', 'PUT'];
+  var types = ['CALL','PUT'];
   for (var ti = 0; ti < types.length; ti++) {
     var type = types[ti];
     var tArr = trades.filter(function(t){ return t.type === type; });
     var tw = tArr.filter(function(t){ return t.result === 'WIN'; }).length;
-    var pct = tArr.length ? Math.round((tw / tArr.length) * 100) : 0;
+    var pct = tArr.length ? Math.round((tw/tArr.length)*100) : 0;
     var color = type === 'CALL' ? '#3b82f6' : '#f59e0b';
-    var tPnl = tArr.reduce(function(s, t){ return s + calcPnl(t); }, 0);
-    cpHtml += '<div style="margin-bottom:20px">';
-    cpHtml += '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:7px">';
-    cpHtml += '<div style="display:flex;align-items:center;gap:8px">';
-    cpHtml += '<span style="font-size:18px">' + (type === 'CALL' ? '📈' : '📉') + '</span>';
-    cpHtml += '<span style="font-weight:600;font-size:14px">' + type + '</span>';
-    cpHtml += '<span style="font-family:JetBrains Mono,monospace;font-size:10px;color:#9ca3af">' + tArr.length + ' trades</span>';
-    cpHtml += '</div>';
-    cpHtml += '<span style="font-size:22px;font-weight:700;color:' + color + '">' + pct + '%</span>';
-    cpHtml += '</div>';
-    cpHtml += '<div class="pbar"><div class="pfill" style="width:' + pct + '%;background:' + color + '"></div></div>';
-    cpHtml += '<div style="display:flex;justify-content:space-between;margin-top:5px">';
-    cpHtml += '<span style="font-family:JetBrains Mono,monospace;font-size:10px;color:#9ca3af">' + tw + 'W · ' + (tArr.length - tw) + 'L</span>';
-    cpHtml += '<span style="font-family:JetBrains Mono,monospace;font-size:11px;font-weight:600;color:' + (tPnl >= 0 ? '#10b981' : '#ef4444') + '">' + fmtS(tPnl) + '</span>';
-    cpHtml += '</div></div>';
+    var tPnl = tArr.reduce(function(s,t){ return s+calcPnl(t); },0);
+    cpHtml += '<div style="margin-bottom:20px"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:7px"><div style="display:flex;align-items:center;gap:8px"><span style="font-size:18px">' + (type==='CALL'?'📈':'📉') + '</span><span style="font-weight:600;font-size:14px">' + type + '</span><span style="font-family:JetBrains Mono,monospace;font-size:10px;color:#9ca3af">' + tArr.length + ' trades</span></div><span style="font-size:22px;font-weight:700;color:' + color + '">' + pct + '%</span></div><div class="pbar"><div class="pfill" style="width:' + pct + '%;background:' + color + '"></div></div><div style="display:flex;justify-content:space-between;margin-top:5px"><span style="font-family:JetBrains Mono,monospace;font-size:10px;color:#9ca3af">' + tw + 'W · ' + (tArr.length-tw) + 'L</span><span style="font-family:JetBrains Mono,monospace;font-size:11px;font-weight:600;color:' + (tPnl>=0?'#10b981':'#ef4444') + '">' + fmtS(tPnl) + '</span></div></div>';
   }
   document.getElementById('callput-data').innerHTML = cpHtml;
-
-  // Emotion
   var emotions = [];
-  for (var ei = 0; ei < trades.length; ei++) {
-    if (trades[ei].emotion && emotions.indexOf(trades[ei].emotion) === -1) {
-      emotions.push(trades[ei].emotion);
-    }
-  }
+  for (var ei = 0; ei < trades.length; ei++) { if (trades[ei].emotion && emotions.indexOf(trades[ei].emotion) === -1) emotions.push(trades[ei].emotion); }
   var emoHtml = '';
   for (var emi = 0; emi < emotions.length; emi++) {
     var em = emotions[emi];
     var et = trades.filter(function(t){ return t.emotion === em; });
     var ew = et.filter(function(t){ return t.result === 'WIN'; }).length;
-    var ep = et.length ? Math.round((ew / et.length) * 100) : 0;
-    var ec = ep >= 65 ? '#10b981' : ep >= 40 ? '#f59e0b' : '#ef4444';
-    emoHtml += '<div style="margin-bottom:10px">';
-    emoHtml += '<div style="display:flex;justify-content:space-between;margin-bottom:4px">';
-    emoHtml += '<span style="font-size:13px;font-weight:500">' + em + '</span>';
-    emoHtml += '<div style="display:flex;gap:8px;align-items:center">';
-    emoHtml += '<span style="font-family:JetBrains Mono,monospace;font-size:10px;color:#9ca3af">' + ew + '/' + et.length + '</span>';
-    emoHtml += '<span style="font-family:JetBrains Mono,monospace;font-size:12px;font-weight:600;color:' + ec + '">' + ep + '%</span>';
-    emoHtml += '</div></div>';
-    emoHtml += '<div class="pbar"><div class="pfill" style="width:' + ep + '%;background:' + ec + '"></div></div>';
-    emoHtml += '</div>';
+    var ep = et.length ? Math.round((ew/et.length)*100) : 0;
+    var ec = ep>=65?'#10b981':ep>=40?'#f59e0b':'#ef4444';
+    emoHtml += '<div style="margin-bottom:10px"><div style="display:flex;justify-content:space-between;margin-bottom:4px"><span style="font-size:13px;font-weight:500">' + em + '</span><div style="display:flex;gap:8px;align-items:center"><span style="font-family:JetBrains Mono,monospace;font-size:10px;color:#9ca3af">' + ew + '/' + et.length + '</span><span style="font-family:JetBrains Mono,monospace;font-size:12px;font-weight:600;color:' + ec + '">' + ep + '%</span></div></div><div class="pbar"><div class="pfill" style="width:' + ep + '%;background:' + ec + '"></div></div></div>';
   }
   document.getElementById('emo-data').innerHTML = emoHtml || '<div style="color:#9ca3af;font-size:12px;font-family:JetBrains Mono,monospace">No data yet.</div>';
-
-  // PnL by index
-  var idxPnl = INDICES.map(function(idx){
-    return {
-      label: idx.replace(' NIFTY', '').replace('BANKNIFTY', 'BANK'),
-      pnl: trades.filter(function(t){ return t.index === idx; }).reduce(function(s, t){ return s + calcPnl(t); }, 0)
-    };
-  }).filter(function(d){ return d.pnl !== 0; });
-
+  var idxPnl = INDICES.map(function(idx){ return {label:idx.replace(' NIFTY','').replace('BANKNIFTY','BANK'),pnl:trades.filter(function(t){return t.index===idx;}).reduce(function(s,t){return s+calcPnl(t);},0)};}).filter(function(d){return d.pnl!==0;});
   destroyChart('c-pnlidx');
   if (idxPnl.length) {
-    new Chart(document.getElementById('c-pnlidx'), {
-      type: 'bar',
-      data: {
-        labels: idxPnl.map(function(d){ return d.label; }),
-        datasets: [{ data: idxPnl.map(function(d){ return d.pnl; }), backgroundColor: idxPnl.map(function(d){ return d.pnl >= 0 ? 'rgba(16,185,129,0.8)' : 'rgba(239,68,68,0.8)'; }), borderRadius: 5 }]
-      },
-      options: {
-        responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { display: false }, tooltip: { callbacks: { label: function(ctx){ return fmt(ctx.raw); } } } },
-        scales: {
-          x: { grid: { display: false }, ticks: { color: '#9ca3af', font: { family: 'JetBrains Mono', size: 10 } } },
-          y: { grid: { color: '#f3f4f6' }, ticks: { color: '#9ca3af', font: { family: 'JetBrains Mono', size: 10 }, callback: function(v){ return '\u20B9' + v; } } }
-        }
-      }
-    });
+    new Chart(document.getElementById('c-pnlidx'),{type:'bar',data:{labels:idxPnl.map(function(d){return d.label;}),datasets:[{data:idxPnl.map(function(d){return d.pnl;}),backgroundColor:idxPnl.map(function(d){return d.pnl>=0?'rgba(16,185,129,0.8)':'rgba(239,68,68,0.8)';}),borderRadius:5}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){return fmt(ctx.raw);}}}},scales:{x:{grid:{display:false},ticks:{color:'#9ca3af',font:{family:'JetBrains Mono',size:10}}},y:{grid:{color:'#f3f4f6'},ticks:{color:'#9ca3af',font:{family:'JetBrains Mono',size:10},callback:function(v){return '\u20B9'+v;}}}}}});
   }
-
-  // Index win rates
   var iwHtml = '';
   for (var ii = 0; ii < INDICES.length; ii++) {
     var idx = INDICES[ii];
     var iArr = trades.filter(function(t){ return t.index === idx; });
     if (!iArr.length) continue;
     var iW = iArr.filter(function(t){ return t.result === 'WIN'; }).length;
-    var iWr = Math.round((iW / iArr.length) * 100);
-    var iC = iWr >= 60 ? '#10b981' : iWr >= 40 ? '#f59e0b' : '#ef4444';
-    iwHtml += '<div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:10px;padding:14px">';
-    iwHtml += '<div style="font-family:JetBrains Mono,monospace;font-size:9px;color:#9ca3af;letter-spacing:1px;margin-bottom:4px">' + idx + '</div>';
-    iwHtml += '<div style="font-size:26px;font-weight:700;color:' + iC + '">' + iWr + '%</div>';
-    iwHtml += '<div style="font-family:JetBrains Mono,monospace;font-size:10px;color:#9ca3af">' + iW + 'W · ' + (iArr.length - iW) + 'L</div>';
-    iwHtml += '<div class="pbar" style="margin-top:6px"><div class="pfill" style="width:' + iWr + '%;background:' + iC + '"></div></div>';
-    iwHtml += '</div>';
+    var iWr = Math.round((iW/iArr.length)*100);
+    var iC = iWr>=60?'#10b981':iWr>=40?'#f59e0b':'#ef4444';
+    iwHtml += '<div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:10px;padding:14px"><div style="font-family:JetBrains Mono,monospace;font-size:9px;color:#9ca3af;letter-spacing:1px;margin-bottom:4px">' + idx + '</div><div style="font-size:26px;font-weight:700;color:' + iC + '">' + iWr + '%</div><div style="font-family:JetBrains Mono,monospace;font-size:10px;color:#9ca3af">' + iW + 'W · ' + (iArr.length-iW) + 'L</div><div class="pbar" style="margin-top:6px"><div class="pfill" style="width:' + iWr + '%;background:' + iC + '"></div></div></div>';
   }
   document.getElementById('idx-winrates').innerHTML = iwHtml || '<div style="color:#9ca3af;font-size:12px">No data.</div>';
 }
 
 // ── WIN RATIO ──
 function renderWinRatio() {
-  var wins = getWins().length;
-  var losses = getLosses().length;
-  var total = trades.length;
-  var wr = getWinRate();
-
+  var wins = getWins().length, losses = getLosses().length, total = trades.length, wr = getWinRate();
   document.getElementById('ring-wr').textContent = wr + '%';
   document.getElementById('ring-wins').textContent = wins;
   document.getElementById('ring-losses').textContent = losses;
-
   destroyChart('c-ring');
-  new Chart(document.getElementById('c-ring'), {
-    type: 'doughnut',
-    data: {
-      datasets: [{
-        data: total ? [wins, losses] : [1, 1],
-        backgroundColor: total ? ['rgba(16,185,129,0.85)', 'rgba(239,68,68,0.85)'] : ['#e5e7eb', '#e5e7eb'],
-        borderWidth: 0
-      }]
-    },
-    options: { responsive: false, cutout: '70%', plugins: { legend: { display: false }, tooltip: { enabled: total > 0 } } }
-  });
-
-  // Monthly trend
+  new Chart(document.getElementById('c-ring'),{type:'doughnut',data:{datasets:[{data:total?[wins,losses]:[1,1],backgroundColor:total?['rgba(16,185,129,0.85)','rgba(239,68,68,0.85)']:['#e5e7eb','#e5e7eb'],borderWidth:0}]},options:{responsive:false,cutout:'70%',plugins:{legend:{display:false},tooltip:{enabled:total>0}}}});
   var monthMap = {};
-  for (var i = 0; i < trades.length; i++) {
-    var m = trades[i].date.substring(0, 7);
-    if (!monthMap[m]) monthMap[m] = { w: 0, l: 0 };
-    if (trades[i].result === 'WIN') monthMap[m].w++; else monthMap[m].l++;
-  }
+  for (var i = 0; i < trades.length; i++) { var m = trades[i].date.substring(0,7); if(!monthMap[m]) monthMap[m]={w:0,l:0}; if(trades[i].result==='WIN') monthMap[m].w++; else monthMap[m].l++; }
   var months = Object.keys(monthMap).sort();
-  var mWr = months.map(function(m){ return Math.round((monthMap[m].w / (monthMap[m].w + monthMap[m].l)) * 100); });
-
+  var mWr = months.map(function(m){ return Math.round((monthMap[m].w/(monthMap[m].w+monthMap[m].l))*100); });
   destroyChart('c-monthly');
   if (months.length) {
-    new Chart(document.getElementById('c-monthly'), {
-      type: 'line',
-      data: {
-        labels: months,
-        datasets: [
-          { label: 'Win Rate %', data: mWr, borderColor: '#4f46e5', backgroundColor: 'rgba(79,70,229,0.06)', borderWidth: 2.5, pointBackgroundColor: '#4f46e5', fill: true, tension: 0.3 },
-          { label: '50% Line', data: months.map(function(){ return 50; }), borderColor: 'rgba(0,0,0,0.12)', borderDash: [4, 4], borderWidth: 1.5, pointRadius: 0 }
-        ]
-      },
-      options: {
-        responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { labels: { color: '#6b7280', font: { family: 'JetBrains Mono', size: 10 } } } },
-        scales: {
-          x: { grid: { color: '#f3f4f6' }, ticks: { color: '#9ca3af', font: { family: 'JetBrains Mono', size: 10 } } },
-          y: { min: 0, max: 100, grid: { color: '#f3f4f6' }, ticks: { color: '#9ca3af', font: { family: 'JetBrains Mono', size: 10 }, callback: function(v){ return v + '%'; } } }
-        }
-      }
-    });
+    new Chart(document.getElementById('c-monthly'),{type:'line',data:{labels:months,datasets:[{label:'Win Rate %',data:mWr,borderColor:'#4f46e5',backgroundColor:'rgba(79,70,229,0.06)',borderWidth:2.5,pointBackgroundColor:'#4f46e5',fill:true,tension:0.3},{label:'50% Line',data:months.map(function(){return 50;}),borderColor:'rgba(0,0,0,0.12)',borderDash:[4,4],borderWidth:1.5,pointRadius:0}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#6b7280',font:{family:'JetBrains Mono',size:10}}}},scales:{x:{grid:{color:'#f3f4f6'},ticks:{color:'#9ca3af',font:{family:'JetBrains Mono',size:10}}},y:{min:0,max:100,grid:{color:'#f3f4f6'},ticks:{color:'#9ca3af',font:{family:'JetBrains Mono',size:10},callback:function(v){return v+'%';}}}}}});
   }
-
-  // Streaks
-  var sorted = trades.slice().sort(function(a, b){ return a.date > b.date ? 1 : -1; });
-  var maxWin = 0, maxLoss = 0, curStreak = 0, curType = null;
-  for (var si = 0; si < sorted.length; si++) {
-    var r = sorted[si].result;
-    if (r === curType) curStreak++; else { curStreak = 1; curType = r; }
-    if (r === 'WIN' && curStreak > maxWin) maxWin = curStreak;
-    if (r === 'LOSS' && curStreak > maxLoss) maxLoss = curStreak;
-  }
-  var curFinal = 0, cfType = null;
-  for (var ci = sorted.length - 1; ci >= 0; ci--) {
-    if (!cfType) cfType = sorted[ci].result;
-    if (sorted[ci].result === cfType) curFinal++; else break;
-  }
-  var lastR = sorted.length ? sorted[sorted.length - 1].result : null;
-  var sHtml = '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">';
-  sHtml += '<div style="background:#ecfdf5;border:1px solid #a7f3d0;border-radius:10px;padding:14px;text-align:center">';
-  sHtml += '<div style="font-family:JetBrains Mono,monospace;font-size:9px;color:#9ca3af;letter-spacing:1.5px;margin-bottom:6px">MAX WIN STREAK</div>';
-  sHtml += '<div style="font-size:34px;font-weight:700;color:#10b981">' + maxWin + '</div>';
-  sHtml += '<div style="font-size:11px;color:#6b7280">consecutive wins</div></div>';
-  sHtml += '<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:10px;padding:14px;text-align:center">';
-  sHtml += '<div style="font-family:JetBrains Mono,monospace;font-size:9px;color:#9ca3af;letter-spacing:1.5px;margin-bottom:6px">MAX LOSS STREAK</div>';
-  sHtml += '<div style="font-size:34px;font-weight:700;color:#ef4444">' + maxLoss + '</div>';
-  sHtml += '<div style="font-size:11px;color:#6b7280">consecutive losses</div></div>';
-  sHtml += '</div><div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:10px;padding:14px;text-align:center">';
-  sHtml += '<div style="font-family:JetBrains Mono,monospace;font-size:9px;color:#9ca3af;letter-spacing:1.5px;margin-bottom:4px">CURRENT STREAK</div>';
-  sHtml += '<div style="font-size:28px;font-weight:700;color:' + (lastR === 'WIN' ? '#10b981' : '#ef4444') + '">' + curFinal + ' ' + (lastR || '—') + '</div></div>';
-  document.getElementById('streak-stats').innerHTML = sHtml;
-
-  // Day of week
-  var days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
-  var dW = [0,0,0,0,0,0,0], dL = [0,0,0,0,0,0,0];
-  for (var di = 0; di < trades.length; di++) {
-    var d = new Date(trades[di].date).getDay();
-    var idx2 = d === 0 ? 6 : d - 1;
-    if (trades[di].result === 'WIN') dW[idx2]++; else dL[idx2]++;
-  }
-  var dWr = days.map(function(day, i){ var tot = dW[i] + dL[i]; return tot ? Math.round((dW[i] / tot) * 100) : 0; });
-
+  var sorted = trades.slice().sort(function(a,b){ return a.date>b.date?1:-1; });
+  var maxWin=0,maxLoss=0,curStreak=0,curType=null;
+  for (var si=0;si<sorted.length;si++) { var r=sorted[si].result; if(r===curType) curStreak++; else{curStreak=1;curType=r;} if(r==='WIN'&&curStreak>maxWin) maxWin=curStreak; if(r==='LOSS'&&curStreak>maxLoss) maxLoss=curStreak; }
+  var curFinal=0,cfType=null;
+  for (var ci=sorted.length-1;ci>=0;ci--) { if(!cfType) cfType=sorted[ci].result; if(sorted[ci].result===cfType) curFinal++; else break; }
+  var lastR=sorted.length?sorted[sorted.length-1].result:null;
+  document.getElementById('streak-stats').innerHTML='<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px"><div style="background:#ecfdf5;border:1px solid #a7f3d0;border-radius:10px;padding:14px;text-align:center"><div style="font-family:JetBrains Mono,monospace;font-size:9px;color:#9ca3af;letter-spacing:1.5px;margin-bottom:6px">MAX WIN STREAK</div><div style="font-size:34px;font-weight:700;color:#10b981">'+maxWin+'</div><div style="font-size:11px;color:#6b7280">consecutive wins</div></div><div style="background:#fef2f2;border:1px solid #fecaca;border-radius:10px;padding:14px;text-align:center"><div style="font-family:JetBrains Mono,monospace;font-size:9px;color:#9ca3af;letter-spacing:1.5px;margin-bottom:6px">MAX LOSS STREAK</div><div style="font-size:34px;font-weight:700;color:#ef4444">'+maxLoss+'</div><div style="font-size:11px;color:#6b7280">consecutive losses</div></div></div><div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:10px;padding:14px;text-align:center"><div style="font-family:JetBrains Mono,monospace;font-size:9px;color:#9ca3af;letter-spacing:1.5px;margin-bottom:4px">CURRENT STREAK</div><div style="font-size:28px;font-weight:700;color:'+(lastR==='WIN'?'#10b981':'#ef4444')+'">'+curFinal+' '+(lastR||'—')+'</div></div>';
+  var days=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+  var dW=[0,0,0,0,0,0,0],dL=[0,0,0,0,0,0,0];
+  for(var di=0;di<trades.length;di++){var d=new Date(trades[di].date).getDay();var idx2=d===0?6:d-1;if(trades[di].result==='WIN') dW[idx2]++; else dL[idx2]++;}
+  var dWr=days.map(function(day,i){var tot=dW[i]+dL[i];return tot?Math.round((dW[i]/tot)*100):0;});
   destroyChart('c-daywin');
-  new Chart(document.getElementById('c-daywin'), {
-    type: 'bar',
-    data: {
-      labels: days,
-      datasets: [{ label: 'Win Rate %', data: dWr, backgroundColor: dWr.map(function(v){ return v >= 60 ? 'rgba(16,185,129,0.8)' : v >= 40 ? 'rgba(245,158,11,0.8)' : 'rgba(239,68,68,0.8)'; }), borderRadius: 6 }]
-    },
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      plugins: { legend: { display: false }, tooltip: { callbacks: { label: function(ctx){ return ctx.raw + '%'; } } } },
-      scales: {
-        x: { grid: { display: false }, ticks: { color: '#9ca3af', font: { family: 'JetBrains Mono', size: 10 } } },
-        y: { min: 0, max: 100, grid: { color: '#f3f4f6' }, ticks: { color: '#9ca3af', font: { family: 'JetBrains Mono', size: 10 }, callback: function(v){ return v + '%'; } } }
-      }
-    }
-  });
+  new Chart(document.getElementById('c-daywin'),{type:'bar',data:{labels:days,datasets:[{label:'Win Rate %',data:dWr,backgroundColor:dWr.map(function(v){return v>=60?'rgba(16,185,129,0.8)':v>=40?'rgba(245,158,11,0.8)':'rgba(239,68,68,0.8)';}),borderRadius:6}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){return ctx.raw+'%';}}}},scales:{x:{grid:{display:false},ticks:{color:'#9ca3af',font:{family:'JetBrains Mono',size:10}}},y:{min:0,max:100,grid:{color:'#f3f4f6'},ticks:{color:'#9ca3af',font:{family:'JetBrains Mono',size:10},callback:function(v){return v+'%';}}}}}});
 }
 
 // ── HISTOGRAM ──
 function renderHistogram() {
-  if (!trades.length) {
-    document.getElementById('c-hist').parentElement.innerHTML = '<div class="empty"><div class="empty-ico">📊</div>No trades to analyse.</div>';
-    return;
-  }
+  if (!trades.length) { return; }
   var pnls = trades.map(function(t){ return calcPnl(t); });
-  var bins = parseInt(document.getElementById('hist-bins').value) || 15;
-  var minV = Math.min.apply(null, pnls);
-  var maxV = Math.max.apply(null, pnls);
-  var binSize = (maxV - minV) / bins;
-  var labels = [], counts = [], colors = [];
-  for (var i = 0; i < bins; i++) {
-    var lo = minV + i * binSize;
-    var hi = lo + binSize;
-    labels.push('\u20B9' + Math.round(lo / 1000) + 'k');
-    var cnt = 0;
-    for (var j = 0; j < pnls.length; j++) {
-      if (pnls[j] >= lo && (i === bins - 1 ? pnls[j] <= hi : pnls[j] < hi)) cnt++;
-    }
-    counts.push(cnt);
-    colors.push(lo >= 0 ? 'rgba(16,185,129,0.8)' : 'rgba(239,68,68,0.8)');
-  }
-
+  var bins = parseInt(document.getElementById('hist-bins').value)||15;
+  var minV = Math.min.apply(null,pnls), maxV = Math.max.apply(null,pnls);
+  var binSize = (maxV-minV)/bins;
+  var labels=[],counts=[],colors=[];
+  for(var i=0;i<bins;i++){var lo=minV+i*binSize,hi=lo+binSize;labels.push('\u20B9'+Math.round(lo/1000)+'k');var cnt=0;for(var j=0;j<pnls.length;j++){if(pnls[j]>=lo&&(i===bins-1?pnls[j]<=hi:pnls[j]<hi)) cnt++;}counts.push(cnt);colors.push(lo>=0?'rgba(16,185,129,0.8)':'rgba(239,68,68,0.8)');}
   destroyChart('c-hist');
-  new Chart(document.getElementById('c-hist'), {
-    type: 'bar',
-    data: { labels: labels, datasets: [{ label: 'Frequency', data: counts, backgroundColor: colors, borderRadius: 4, barPercentage: 0.95, categoryPercentage: 1.0 }] },
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      plugins: { legend: { display: false }, tooltip: { callbacks: { label: function(ctx){ return ctx.raw + ' trades'; } } } },
-      scales: {
-        x: { grid: { display: false }, ticks: { color: '#9ca3af', font: { family: 'JetBrains Mono', size: 10 } } },
-        y: { grid: { color: '#f3f4f6' }, ticks: { color: '#9ca3af', font: { family: 'JetBrains Mono', size: 10 } } }
-      }
-    }
-  });
-
-  // Stats
-  var srt = pnls.slice().sort(function(a,b){ return a-b; });
-  var mean = pnls.reduce(function(a,b){ return a+b; }, 0) / pnls.length;
-  var median = srt.length % 2 === 0 ? (srt[srt.length/2-1] + srt[srt.length/2])/2 : srt[Math.floor(srt.length/2)];
-  var variance = pnls.reduce(function(s,p){ return s + Math.pow(p-mean,2); }, 0) / pnls.length;
-  var stddev = Math.sqrt(variance);
-  var pos = pnls.filter(function(p){ return p > 0; });
-  var neg = pnls.filter(function(p){ return p < 0; });
-  var avgWin = pos.length ? pos.reduce(function(a,b){ return a+b; }, 0) / pos.length : 0;
-  var avgLoss = neg.length ? Math.abs(neg.reduce(function(a,b){ return a+b; }, 0) / neg.length) : 0;
-
-  var statsArr = [
-    ['Mean P&L', fmtS(mean), mean >= 0 ? '#10b981' : '#ef4444'],
-    ['Median P&L', fmtS(median), median >= 0 ? '#10b981' : '#ef4444'],
-    ['Std Deviation', fmt(stddev), '#1a1a2e'],
-    ['Max Profit', fmt(maxV), '#10b981'],
-    ['Max Loss', fmt(Math.abs(minV)), '#ef4444'],
-    ['Avg Win', pos.length ? fmt(avgWin) : '—', '#10b981'],
-    ['Avg Loss', neg.length ? fmt(avgLoss) : '—', '#ef4444']
-  ];
-  var statsHtml = '';
-  for (var si2 = 0; si2 < statsArr.length; si2++) {
-    statsHtml += '<div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #f3f4f6">';
-    statsHtml += '<span style="font-family:JetBrains Mono,monospace;font-size:10px;color:#9ca3af">' + statsArr[si2][0] + '</span>';
-    statsHtml += '<span style="font-family:JetBrains Mono,monospace;font-size:12px;font-weight:600;color:' + statsArr[si2][2] + '">' + statsArr[si2][1] + '</span>';
-    statsHtml += '</div>';
-  }
-  document.getElementById('hist-stats').innerHTML = statsHtml;
-
-  // Scatter
-  var scWin = [], scLoss = [];
-  for (var sci = 0; sci < trades.length; sci++) {
-    var sp = calcPnl(trades[sci]);
-    if (trades[sci].result === 'WIN') scWin.push({ x: sci + 1, y: sp });
-    else scLoss.push({ x: sci + 1, y: sp });
-  }
+  new Chart(document.getElementById('c-hist'),{type:'bar',data:{labels:labels,datasets:[{label:'Frequency',data:counts,backgroundColor:colors,borderRadius:4,barPercentage:0.95,categoryPercentage:1.0}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){return ctx.raw+' trades';}}}},scales:{x:{grid:{display:false},ticks:{color:'#9ca3af',font:{family:'JetBrains Mono',size:10}}},y:{grid:{color:'#f3f4f6'},ticks:{color:'#9ca3af',font:{family:'JetBrains Mono',size:10}}}}}});
+  var srt=pnls.slice().sort(function(a,b){return a-b;});
+  var mean=pnls.reduce(function(a,b){return a+b;},0)/pnls.length;
+  var median=srt.length%2===0?(srt[srt.length/2-1]+srt[srt.length/2])/2:srt[Math.floor(srt.length/2)];
+  var variance=pnls.reduce(function(s,p){return s+Math.pow(p-mean,2);},0)/pnls.length;
+  var stddev=Math.sqrt(variance);
+  var pos=pnls.filter(function(p){return p>0;}),neg=pnls.filter(function(p){return p<0;});
+  var avgWin=pos.length?pos.reduce(function(a,b){return a+b;},0)/pos.length:0;
+  var avgLoss=neg.length?Math.abs(neg.reduce(function(a,b){return a+b;},0)/neg.length):0;
+  var statsArr=[['Mean P&L',fmtS(mean),mean>=0?'#10b981':'#ef4444'],['Median P&L',fmtS(median),median>=0?'#10b981':'#ef4444'],['Std Deviation',fmt(stddev),'#1a1a2e'],['Max Profit',fmt(maxV),'#10b981'],['Max Loss',fmt(Math.abs(minV)),'#ef4444'],['Avg Win',pos.length?fmt(avgWin):'—','#10b981'],['Avg Loss',neg.length?fmt(avgLoss):'—','#ef4444']];
+  var sh='';for(var si=0;si<statsArr.length;si++){sh+='<div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #f3f4f6"><span style="font-family:JetBrains Mono,monospace;font-size:10px;color:#9ca3af">'+statsArr[si][0]+'</span><span style="font-family:JetBrains Mono,monospace;font-size:12px;font-weight:600;color:'+statsArr[si][2]+'">'+statsArr[si][1]+'</span></div>';}
+  document.getElementById('hist-stats').innerHTML=sh;
+  var scWin=[],scLoss=[];
+  for(var sci=0;sci<trades.length;sci++){var sp=calcPnl(trades[sci]);if(trades[sci].result==='WIN') scWin.push({x:sci+1,y:sp}); else scLoss.push({x:sci+1,y:sp});}
   destroyChart('c-scatter');
-  new Chart(document.getElementById('c-scatter'), {
-    type: 'scatter',
-    data: {
-      datasets: [
-        { label: 'Win', data: scWin, backgroundColor: 'rgba(16,185,129,0.7)', pointRadius: 5 },
-        { label: 'Loss', data: scLoss, backgroundColor: 'rgba(239,68,68,0.7)', pointRadius: 5 }
-      ]
-    },
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      plugins: { legend: { labels: { color: '#6b7280', font: { family: 'JetBrains Mono', size: 10 } } } },
-      scales: {
-        x: { grid: { color: '#f3f4f6' }, ticks: { color: '#9ca3af', font: { family: 'JetBrains Mono', size: 10 } } },
-        y: { grid: { color: '#f3f4f6' }, ticks: { color: '#9ca3af', font: { family: 'JetBrains Mono', size: 10 }, callback: function(v){ return '\u20B9' + v; } } }
-      }
-    }
-  });
-
-  // Profit factor
-  var grossP = pos.reduce(function(a,b){ return a+b; }, 0);
-  var grossL = Math.abs(neg.reduce(function(a,b){ return a+b; }, 0));
-  var pf = grossL > 0 ? (grossP / grossL).toFixed(2) : 'N/A';
-  var pfNum = parseFloat(pf);
-  var pfC = pfNum >= 2 ? '#10b981' : pfNum >= 1 ? '#f59e0b' : '#ef4444';
-  var pfLabel = pfNum >= 2 ? 'Excellent' : pfNum >= 1.5 ? 'Good' : pfNum >= 1 ? 'Acceptable' : 'Poor';
-  var pfHtml = '<div style="text-align:center;padding:16px 0">';
-  pfHtml += '<div style="font-family:JetBrains Mono,monospace;font-size:10px;color:#9ca3af;letter-spacing:1.5px;margin-bottom:6px">PROFIT FACTOR</div>';
-  pfHtml += '<div style="font-size:48px;font-weight:700;color:' + pfC + ';line-height:1">' + pf + '</div>';
-  pfHtml += '<div style="font-size:12px;color:#6b7280;margin-top:6px">' + pfLabel + ' performance</div></div>';
-  pfHtml += '<div style="background:#f9fafb;border-radius:9px;padding:12px">';
-  pfHtml += '<div style="display:flex;justify-content:space-between;margin-bottom:7px">';
-  pfHtml += '<span style="font-family:JetBrains Mono,monospace;font-size:10px;color:#9ca3af">GROSS PROFIT</span>';
-  pfHtml += '<span style="font-family:JetBrains Mono,monospace;font-size:11px;font-weight:600;color:#10b981">' + fmt(grossP) + '</span></div>';
-  pfHtml += '<div style="display:flex;justify-content:space-between">';
-  pfHtml += '<span style="font-family:JetBrains Mono,monospace;font-size:10px;color:#9ca3af">GROSS LOSS</span>';
-  pfHtml += '<span style="font-family:JetBrains Mono,monospace;font-size:11px;font-weight:600;color:#ef4444">' + fmt(grossL) + '</span></div></div>';
-  document.getElementById('pf-display').innerHTML = pfHtml;
-
-  // Win vs loss comp
+  new Chart(document.getElementById('c-scatter'),{type:'scatter',data:{datasets:[{label:'Win',data:scWin,backgroundColor:'rgba(16,185,129,0.7)',pointRadius:5},{label:'Loss',data:scLoss,backgroundColor:'rgba(239,68,68,0.7)',pointRadius:5}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#6b7280',font:{family:'JetBrains Mono',size:10}}}},scales:{x:{grid:{color:'#f3f4f6'},ticks:{color:'#9ca3af',font:{family:'JetBrains Mono',size:10}}},y:{grid:{color:'#f3f4f6'},ticks:{color:'#9ca3af',font:{family:'JetBrains Mono',size:10},callback:function(v){return '\u20B9'+v;}}}}}});
+  var grossP=pos.reduce(function(a,b){return a+b;},0),grossL=Math.abs(neg.reduce(function(a,b){return a+b;},0));
+  var pf=grossL>0?(grossP/grossL).toFixed(2):'N/A';
+  var pfNum=parseFloat(pf),pfC=pfNum>=2?'#10b981':pfNum>=1?'#f59e0b':'#ef4444';
+  document.getElementById('pf-display').innerHTML='<div style="text-align:center;padding:16px 0"><div style="font-family:JetBrains Mono,monospace;font-size:10px;color:#9ca3af;letter-spacing:1.5px;margin-bottom:6px">PROFIT FACTOR</div><div style="font-size:48px;font-weight:700;color:'+pfC+';line-height:1">'+pf+'</div><div style="font-size:12px;color:#6b7280;margin-top:6px">'+(pfNum>=2?'Excellent':pfNum>=1.5?'Good':pfNum>=1?'Acceptable':'Poor')+' performance</div></div><div style="background:#f9fafb;border-radius:9px;padding:12px"><div style="display:flex;justify-content:space-between;margin-bottom:7px"><span style="font-family:JetBrains Mono,monospace;font-size:10px;color:#9ca3af">GROSS PROFIT</span><span style="font-family:JetBrains Mono,monospace;font-size:11px;font-weight:600;color:#10b981">'+fmt(grossP)+'</span></div><div style="display:flex;justify-content:space-between"><span style="font-family:JetBrains Mono,monospace;font-size:10px;color:#9ca3af">GROSS LOSS</span><span style="font-family:JetBrains Mono,monospace;font-size:11px;font-weight:600;color:#ef4444">'+fmt(grossL)+'</span></div></div>';
   destroyChart('c-wlcomp');
-  new Chart(document.getElementById('c-wlcomp'), {
-    type: 'bar',
-    data: {
-      labels: ['Avg Win', 'Avg Loss', 'Best Trade', 'Worst Trade'],
-      datasets: [{ data: [avgWin, avgLoss, pos.length ? Math.max.apply(null, pos) : 0, neg.length ? Math.abs(Math.min.apply(null, neg)) : 0], backgroundColor: ['rgba(16,185,129,0.8)','rgba(239,68,68,0.8)','rgba(16,185,129,0.5)','rgba(239,68,68,0.5)'], borderRadius: 6 }]
-    },
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      plugins: { legend: { display: false }, tooltip: { callbacks: { label: function(ctx){ return fmt(ctx.raw); } } } },
-      scales: {
-        x: { grid: { display: false }, ticks: { color: '#9ca3af', font: { family: 'JetBrains Mono', size: 10 } } },
-        y: { grid: { color: '#f3f4f6' }, ticks: { color: '#9ca3af', font: { family: 'JetBrains Mono', size: 10 }, callback: function(v){ return '\u20B9' + v; } } }
-      }
-    }
-  });
-
-  // Strategy cumulative
-  var topS = strategies.filter(function(s){ return trades.some(function(t){ return t.strategy === s; }); }).slice(0, 5);
-  var scDatasets = [];
-  for (var tsi = 0; tsi < topS.length; tsi++) {
-    var sName = topS[tsi];
-    var sTrades = trades.filter(function(t){ return t.strategy === sName; }).sort(function(a,b){ return a.date > b.date ? 1 : -1; });
-    var run = 0;
-    var data = sTrades.map(function(t){ run += calcPnl(t); return run; });
-    scDatasets.push({ label: sName.length > 10 ? sName.substring(0, 10) + '…' : sName, data: data, borderColor: COLORS[tsi % COLORS.length], backgroundColor: 'transparent', borderWidth: 2, pointRadius: 2, tension: 0.3 });
-  }
-  var maxLen = 0;
-  for (var ml = 0; ml < topS.length; ml++) {
-    var l = trades.filter(function(t){ return t.strategy === topS[ml]; }).length;
-    if (l > maxLen) maxLen = l;
-  }
+  new Chart(document.getElementById('c-wlcomp'),{type:'bar',data:{labels:['Avg Win','Avg Loss','Best Trade','Worst Trade'],datasets:[{data:[avgWin,avgLoss,pos.length?Math.max.apply(null,pos):0,neg.length?Math.abs(Math.min.apply(null,neg)):0],backgroundColor:['rgba(16,185,129,0.8)','rgba(239,68,68,0.8)','rgba(16,185,129,0.5)','rgba(239,68,68,0.5)'],borderRadius:6}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){return fmt(ctx.raw);}}}},scales:{x:{grid:{display:false},ticks:{color:'#9ca3af',font:{family:'JetBrains Mono',size:10}}},y:{grid:{color:'#f3f4f6'},ticks:{color:'#9ca3af',font:{family:'JetBrains Mono',size:10},callback:function(v){return '\u20B9'+v;}}}}}});
+  var topS=strategies.filter(function(s){return trades.some(function(t){return t.strategy===s;});}).slice(0,5);
+  var scDatasets=[];
+  for(var tsi=0;tsi<topS.length;tsi++){var sName=topS[tsi];var sTrades=trades.filter(function(t){return t.strategy===sName;}).sort(function(a,b){return a.date>b.date?1:-1;});var run=0;var data=sTrades.map(function(t){run+=calcPnl(t);return run;});scDatasets.push({label:sName.length>10?sName.substring(0,10)+'…':sName,data:data,borderColor:COLORS[tsi%COLORS.length],backgroundColor:'transparent',borderWidth:2,pointRadius:2,tension:0.3});}
+  var maxLen=0;for(var ml=0;ml<topS.length;ml++){var l=trades.filter(function(t){return t.strategy===topS[ml];}).length;if(l>maxLen) maxLen=l;}
   destroyChart('c-stratcum');
-  if (scDatasets.length) {
-    new Chart(document.getElementById('c-stratcum'), {
-      type: 'line',
-      data: { labels: Array.from({ length: maxLen }, function(_, i){ return i + 1; }), datasets: scDatasets },
-      options: {
-        responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { labels: { color: '#6b7280', font: { family: 'JetBrains Mono', size: 10 } } } },
-        scales: {
-          x: { grid: { color: '#f3f4f6' }, ticks: { color: '#9ca3af', font: { family: 'JetBrains Mono', size: 10 } } },
-          y: { grid: { color: '#f3f4f6' }, ticks: { color: '#9ca3af', font: { family: 'JetBrains Mono', size: 10 }, callback: function(v){ return '\u20B9' + v; } } }
-        }
-      }
-    });
-  }
+  if(scDatasets.length){new Chart(document.getElementById('c-stratcum'),{type:'line',data:{labels:Array.from({length:maxLen},function(_,i){return i+1;}),datasets:scDatasets},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#6b7280',font:{family:'JetBrains Mono',size:10}}}},scales:{x:{grid:{color:'#f3f4f6'},ticks:{color:'#9ca3af',font:{family:'JetBrains Mono',size:10}}},y:{grid:{color:'#f3f4f6'},ticks:{color:'#9ca3af',font:{family:'JetBrains Mono',size:10},callback:function(v){return '\u20B9'+v;}}}}}})}
 }
 
 // ── HEATMAP ──
 function renderHeatmap() {
-  var dateMap = {};
-  for (var i = 0; i < trades.length; i++) {
-    var dt = trades[i].date;
-    if (!dateMap[dt]) dateMap[dt] = { pnl: 0, count: 0 };
-    dateMap[dt].pnl += calcPnl(trades[i]);
-    dateMap[dt].count++;
-  }
-  var allPnls = Object.values ? Object.values(dateMap).map(function(d){ return Math.abs(d.pnl); }) : [];
-  if (!allPnls.length) allPnls = [1];
-  var maxAbs = Math.max.apply(null, allPnls) || 1;
-
-  var today = new Date();
-  var cells = [];
-  for (var w = 11; w >= 0; w--) {
-    for (var d = 0; d < 7; d++) {
-      var dt2 = new Date(today);
-      dt2.setDate(today.getDate() - (w * 7 + today.getDay() - d));
-      var key = dt2.getFullYear() + '-' + String(dt2.getMonth()+1).padStart(2,'0') + '-' + String(dt2.getDate()).padStart(2,'0');
-      cells.push({ date: key, day: d, data: dateMap[key] || null });
-    }
-  }
-
-  var dayLabels = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-  var hmHtml = '<div style="overflow-x:auto;padding-top:4px"><div style="display:flex;gap:3px">';
-  hmHtml += '<div style="display:flex;flex-direction:column;gap:3px;margin-top:18px">';
-  for (var dl = 0; dl < dayLabels.length; dl++) {
-    hmHtml += '<div style="height:16px;font-family:JetBrains Mono,monospace;font-size:9px;color:#9ca3af;width:22px">' + dayLabels[dl] + '</div>';
-  }
-  hmHtml += '</div><div style="display:grid;grid-template-rows:repeat(7,16px);grid-auto-flow:column;gap:3px">';
-  for (var ci = 0; ci < cells.length; ci++) {
-    var cell = cells[ci];
-    var bg = '#f3f4f6';
-    if (cell.data) {
-      var intensity = Math.min(Math.abs(cell.data.pnl) / maxAbs, 1);
-      var alpha = (0.2 + intensity * 0.7).toFixed(2);
-      bg = cell.data.pnl > 0 ? 'rgba(16,185,129,' + alpha + ')' : 'rgba(239,68,68,' + alpha + ')';
-    }
-    var ttip = cell.data ? cell.date + ': ' + cell.data.count + ' trade(s), ' + fmtS(cell.data.pnl) : cell.date + ': No trades';
-    hmHtml += '<div title="' + ttip + '" style="width:16px;height:16px;border-radius:3px;background:' + bg + '"></div>';
-  }
-  hmHtml += '</div></div></div>';
-  document.getElementById('heatmap-wrap').innerHTML = hmHtml;
-
-  // Monthly PnL
-  var mMap = {};
-  for (var mi = 0; mi < trades.length; mi++) {
-    var mm = trades[mi].date.substring(0, 7);
-    if (!mMap[mm]) mMap[mm] = 0;
-    mMap[mm] += calcPnl(trades[mi]);
-  }
-  var mKeys = Object.keys(mMap).sort();
+  var dateMap={};
+  for(var i=0;i<trades.length;i++){var dt=trades[i].date;if(!dateMap[dt]) dateMap[dt]={pnl:0,count:0};dateMap[dt].pnl+=calcPnl(trades[i]);dateMap[dt].count++;}
+  var allPnls=[];for(var k in dateMap) allPnls.push(Math.abs(dateMap[k].pnl));
+  var maxAbs=allPnls.length?Math.max.apply(null,allPnls):1;
+  var today=new Date(),cells=[];
+  for(var w=11;w>=0;w--){for(var d=0;d<7;d++){var dt2=new Date(today);dt2.setDate(today.getDate()-(w*7+today.getDay()-d));var key=dt2.getFullYear()+'-'+String(dt2.getMonth()+1).padStart(2,'0')+'-'+String(dt2.getDate()).padStart(2,'0');cells.push({date:key,day:d,data:dateMap[key]||null});}}
+  var dayLabels=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  var hmHtml='<div style="overflow-x:auto;padding-top:4px"><div style="display:flex;gap:3px"><div style="display:flex;flex-direction:column;gap:3px;margin-top:18px">';
+  for(var dl=0;dl<dayLabels.length;dl++) hmHtml+='<div style="height:16px;font-family:JetBrains Mono,monospace;font-size:9px;color:#9ca3af;width:22px">'+dayLabels[dl]+'</div>';
+  hmHtml+='</div><div style="display:grid;grid-template-rows:repeat(7,16px);grid-auto-flow:column;gap:3px">';
+  for(var ci=0;ci<cells.length;ci++){var cell=cells[ci],bg='#f3f4f6';if(cell.data){var intensity=Math.min(Math.abs(cell.data.pnl)/maxAbs,1);var alpha=(0.2+intensity*0.7).toFixed(2);bg=cell.data.pnl>0?'rgba(16,185,129,'+alpha+')':'rgba(239,68,68,'+alpha+')';}var ttip=cell.data?cell.date+': '+cell.data.count+' trade(s), '+fmtS(cell.data.pnl):cell.date+': No trades';hmHtml+='<div title="'+ttip+'" style="width:16px;height:16px;border-radius:3px;background:'+bg+'"></div>';}
+  hmHtml+='</div></div></div>';
+  document.getElementById('heatmap-wrap').innerHTML=hmHtml;
+  var mMap={};
+  for(var mi=0;mi<trades.length;mi++){var mm=trades[mi].date.substring(0,7);if(!mMap[mm]) mMap[mm]=0;mMap[mm]+=calcPnl(trades[mi]);}
+  var mKeys=Object.keys(mMap).sort();
   destroyChart('c-monthlypnl');
-  if (mKeys.length) {
-    new Chart(document.getElementById('c-monthlypnl'), {
-      type: 'bar',
-      data: { labels: mKeys, datasets: [{ data: mKeys.map(function(k){ return mMap[k]; }), backgroundColor: mKeys.map(function(k){ return mMap[k] >= 0 ? 'rgba(16,185,129,0.8)' : 'rgba(239,68,68,0.8)'; }), borderRadius: 6 }] },
-      options: {
-        responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { display: false }, tooltip: { callbacks: { label: function(ctx){ return fmtS(ctx.raw); } } } },
-        scales: {
-          x: { grid: { display: false }, ticks: { color: '#9ca3af', font: { family: 'JetBrains Mono', size: 10 } } },
-          y: { grid: { color: '#f3f4f6' }, ticks: { color: '#9ca3af', font: { family: 'JetBrains Mono', size: 10 }, callback: function(v){ return '\u20B9' + v; } } }
-        }
-      }
-    });
-  }
-
-  // Best/worst days
-  var dayArr = Object.keys(dateMap).map(function(k){ return { date: k, pnl: dateMap[k].pnl }; });
-  dayArr.sort(function(a,b){ return b.pnl - a.pnl; });
-  var best5 = dayArr.slice(0, 5);
-  var worst5 = dayArr.slice(-5).reverse();
-  var bwHtml = '<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">';
-  bwHtml += '<div><div style="font-family:JetBrains Mono,monospace;font-size:10px;color:#9ca3af;letter-spacing:1.5px;margin-bottom:10px">BEST 5 DAYS</div>';
-  for (var bi = 0; bi < best5.length; bi++) {
-    bwHtml += '<div style="display:flex;justify-content:space-between;padding:8px 12px;border-radius:7px;background:#ecfdf5;margin-bottom:5px">';
-    bwHtml += '<span style="font-family:JetBrains Mono,monospace;font-size:11px">' + best5[bi].date + '</span>';
-    bwHtml += '<span style="font-family:JetBrains Mono,monospace;font-size:11px;font-weight:600;color:#10b981">' + fmtS(best5[bi].pnl) + '</span></div>';
-  }
-  bwHtml += '</div><div><div style="font-family:JetBrains Mono,monospace;font-size:10px;color:#9ca3af;letter-spacing:1.5px;margin-bottom:10px">WORST 5 DAYS</div>';
-  for (var wi = 0; wi < worst5.length; wi++) {
-    bwHtml += '<div style="display:flex;justify-content:space-between;padding:8px 12px;border-radius:7px;background:#fef2f2;margin-bottom:5px">';
-    bwHtml += '<span style="font-family:JetBrains Mono,monospace;font-size:11px">' + worst5[wi].date + '</span>';
-    bwHtml += '<span style="font-family:JetBrains Mono,monospace;font-size:11px;font-weight:600;color:#ef4444">' + fmtS(worst5[wi].pnl) + '</span></div>';
-  }
-  bwHtml += '</div></div>';
-  document.getElementById('best-worst').innerHTML = bwHtml;
+  if(mKeys.length){new Chart(document.getElementById('c-monthlypnl'),{type:'bar',data:{labels:mKeys,datasets:[{data:mKeys.map(function(k){return mMap[k];}),backgroundColor:mKeys.map(function(k){return mMap[k]>=0?'rgba(16,185,129,0.8)':'rgba(239,68,68,0.8)';}),borderRadius:6}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){return fmtS(ctx.raw);}}}},scales:{x:{grid:{display:false},ticks:{color:'#9ca3af',font:{family:'JetBrains Mono',size:10}}},y:{grid:{color:'#f3f4f6'},ticks:{color:'#9ca3af',font:{family:'JetBrains Mono',size:10},callback:function(v){return '\u20B9'+v;}}}}}})}
+  var dayArr=Object.keys(dateMap).map(function(k){return{date:k,pnl:dateMap[k].pnl};});
+  dayArr.sort(function(a,b){return b.pnl-a.pnl;});
+  var best5=dayArr.slice(0,5),worst5=dayArr.slice(-5).reverse();
+  var bwHtml='<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px"><div><div style="font-family:JetBrains Mono,monospace;font-size:10px;color:#9ca3af;letter-spacing:1.5px;margin-bottom:10px">BEST 5 DAYS</div>';
+  for(var bi=0;bi<best5.length;bi++) bwHtml+='<div style="display:flex;justify-content:space-between;padding:8px 12px;border-radius:7px;background:#ecfdf5;margin-bottom:5px"><span style="font-family:JetBrains Mono,monospace;font-size:11px">'+best5[bi].date+'</span><span style="font-family:JetBrains Mono,monospace;font-size:11px;font-weight:600;color:#10b981">'+fmtS(best5[bi].pnl)+'</span></div>';
+  bwHtml+='</div><div><div style="font-family:JetBrains Mono,monospace;font-size:10px;color:#9ca3af;letter-spacing:1.5px;margin-bottom:10px">WORST 5 DAYS</div>';
+  for(var wi=0;wi<worst5.length;wi++) bwHtml+='<div style="display:flex;justify-content:space-between;padding:8px 12px;border-radius:7px;background:#fef2f2;margin-bottom:5px"><span style="font-family:JetBrains Mono,monospace;font-size:11px">'+worst5[wi].date+'</span><span style="font-family:JetBrains Mono,monospace;font-size:11px;font-weight:600;color:#ef4444">'+fmtS(worst5[wi].pnl)+'</span></div>';
+  bwHtml+='</div></div>';
+  document.getElementById('best-worst').innerHTML=bwHtml;
 }
 
 // ── INSIGHTS ──
 function renderInsights() {
-  var wrap = document.getElementById('insights-wrap');
-  if (!trades.length) {
-    wrap.innerHTML = '<div class="empty" style="grid-column:1/-1"><div class="empty-ico">💡</div>Log trades to get insights.</div>';
-    return;
+  var wrap=document.getElementById('insights-wrap');
+  if(!trades.length){wrap.innerHTML='<div class="empty" style="grid-column:1/-1"><div class="empty-ico">💡</div>Log trades to get insights.</div>';return;}
+  var wr=parseFloat(getWinRate()),wins=getWins(),losses=getLosses();
+  var avgWin=wins.length?wins.reduce(function(s,t){return s+calcPnl(t);},0)/wins.length:0;
+  var avgLoss=losses.length?Math.abs(losses.reduce(function(s,t){return s+calcPnl(t);},0)/losses.length):0;
+  var rratio=avgLoss>0?(avgWin/avgLoss).toFixed(2):'N/A';
+  var items=[];
+  var wrText=wr>=65?'Excellent! Winning more than 65%.':wr>=50?'Above breakeven. Focus on high-conviction setups.':'Below 50%. Review entry criteria.';
+  items.push({ico:'🎯',title:'Win Rate',bg:'#eef2ff',text:'Win rate: '+wr+'%. '+wrText});
+  var rrText=parseFloat(rratio)>=2?'Excellent R:R.':parseFloat(rratio)>=1?'Acceptable. Widen targets or tighten stops.':'Poor. Cut losses faster.';
+  items.push({ico:'⚖️',title:'Risk-Reward',bg:'#eff6ff',text:'Avg win: '+fmt(avgWin)+', avg loss: '+fmt(avgLoss)+'. R:R = '+rratio+'. '+rrText});
+  var totalTax=getTotalTax();
+  items.push({ico:'🧾',title:'Tax Impact',bg:'#fffbeb',text:'You have paid '+fmt(totalTax)+' in charges. Gross P&L: '+fmtS(getTotalPnl())+'. Net P&L after charges: '+fmtS(getTotalNetPnl())+'.'});
+  var emos=[];for(var i=0;i<trades.length;i++){if(trades[i].emotion&&emos.indexOf(trades[i].emotion)===-1) emos.push(trades[i].emotion);}
+  if(emos.length){var bestEmo=null,bestEmoWr=-1;for(var ei=0;ei<emos.length;ei++){var em=emos[ei];var et=trades.filter(function(t){return t.emotion===em;});var ew=et.filter(function(t){return t.result==='WIN';}).length;var ewr=et.length?ew/et.length:0;if(ewr>bestEmoWr){bestEmoWr=ewr;bestEmo=em;}}items.push({ico:'🧠',title:'Emotional Edge',bg:'#ecfdf5',text:'Best performance when "'+bestEmo+'" — '+Math.round(bestEmoWr*100)+'% win rate.'});}
+  var bestS=getBestStrategy();
+  if(bestS.name) items.push({ico:'🏆',title:'Best Strategy',bg:'#fffbeb',text:'"'+bestS.name+'" — '+bestS.wr+'% win rate. Increase allocation when conditions align.'});
+  var sorted=trades.slice().sort(function(a,b){return a.date>b.date?1:-1;});
+  var recentN=Math.min(5,sorted.length),recentW=sorted.slice(-recentN).filter(function(t){return t.result==='WIN';}).length,recentPct=Math.round((recentW/recentN)*100);
+  items.push({ico:'📈',title:'Recent Form',bg:recentPct>=60?'#ecfdf5':'#fef2f2',text:'Last '+recentN+' trades: '+recentPct+'% win rate. '+(recentPct>=60?'Stay disciplined.':'Consider reducing size.')});
+  var html='';
+  for(var ii=0;ii<items.length;ii++){var item=items[ii];html+='<div class="ins-card"><div class="ins-ico" style="background:'+item.bg+'">'+item.ico+'</div><div><div class="ins-title">'+item.title+'</div><div class="ins-text">'+item.text+'</div></div></div>';}
+  wrap.innerHTML=html;
+}
+
+// ── TAX REPORT PAGE ──
+function renderTax() {
+  var totalGross=getTotalPnl(),totalNet=getTotalNetPnl(),totalTax=getTotalTax();
+  var totalSTT=0,totalBrok=0,totalGST=0,totalSEBI=0,totalExc=0,totalStamp=0;
+  for(var i=0;i<trades.length;i++){var tx=calcTax(trades[i].entry,trades[i].exit,trades[i].qty);totalSTT+=tx.stt;totalBrok+=tx.brokerage;totalGST+=tx.gst;totalSEBI+=tx.sebi;totalExc+=tx.exchange;totalStamp+=tx.stamp;}
+  document.getElementById('tax-stats').innerHTML=
+    statCard(totalGross>=0?'green':'red',totalGross>=0?'💰':'📉','GROSS P&L',fmtS(totalGross),'before charges')+
+    statCard('red','🧾','TOTAL CHARGES',fmt(totalTax),'all taxes paid')+
+    statCard(totalNet>=0?'green':'red','💎','NET P&L',fmtS(totalNet),'after all charges')+
+    statCard('blue','📊','TOTAL TRADES',trades.length,'all time');
+  var bkHtml='';
+  var rows=[['STT (Sell Side 0.05%)',totalSTT],['Brokerage (₹20/order)',totalBrok],['GST on Brokerage (18%)',totalGST],['SEBI Charges',totalSEBI],['Exchange Charges (NSE)',totalExc],['Stamp Duty (Buy 0.003%)',totalStamp]];
+  for(var ri=0;ri<rows.length;ri++){bkHtml+='<div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid #f3f4f6"><span style="font-size:13px;color:#374151">'+rows[ri][0]+'</span><span style="font-family:JetBrains Mono,monospace;font-size:12px;font-weight:600;color:#ef4444">-'+fmt(rows[ri][1])+'</span></div>';}
+  bkHtml+='<div style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;margin-top:4px;border-top:2px solid #e5e7eb"><span style="font-size:14px;font-weight:700">TOTAL CHARGES</span><span style="font-family:JetBrains Mono,monospace;font-size:14px;font-weight:700;color:#ef4444">-'+fmt(totalTax)+'</span></div>';
+  document.getElementById('tax-breakdown').innerHTML=bkHtml;
+  destroyChart('c-taxchart');
+  if(trades.length){
+    new Chart(document.getElementById('c-taxchart'),{type:'doughnut',data:{labels:['STT','Brokerage','GST','SEBI','Exchange','Stamp'],datasets:[{data:[totalSTT,totalBrok,totalGST,totalSEBI,totalExc,totalStamp],backgroundColor:['#ef4444','#f59e0b','#10b981','#3b82f6','#8b5cf6','#ec4899'],borderWidth:0}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'right',labels:{color:'#6b7280',font:{family:'JetBrains Mono',size:10},padding:10}}}}});
   }
-  var wr = parseFloat(getWinRate());
-  var wins = getWins(), losses = getLosses();
-  var avgWin = wins.length ? wins.reduce(function(s,t){ return s+calcPnl(t); },0) / wins.length : 0;
-  var avgLoss = losses.length ? Math.abs(losses.reduce(function(s,t){ return s+calcPnl(t); },0) / losses.length) : 0;
-  var rratio = avgLoss > 0 ? (avgWin / avgLoss).toFixed(2) : 'N/A';
-
-  var items = [];
-
-  var wrText = wr >= 65 ? 'Excellent! Winning more than 65% of trades.' : wr >= 50 ? 'Above breakeven. Focus on high-conviction setups.' : 'Below 50%. Review your entry criteria and wait for stronger setups.';
-  items.push({ ico: '🎯', title: 'Win Rate Assessment', bg: '#eef2ff', text: 'Your win rate is ' + wr + '%. ' + wrText });
-
-  var rrText = parseFloat(rratio) >= 2 ? 'Excellent — making 2x+ on wins vs losses.' : parseFloat(rratio) >= 1 ? 'Acceptable. Try wider targets or tighter stops.' : 'Poor — losses exceed wins in size. Cut losses faster.';
-  items.push({ ico: '⚖️', title: 'Risk-Reward Ratio', bg: '#eff6ff', text: 'Avg win: ' + fmt(avgWin) + ', avg loss: ' + fmt(avgLoss) + '. R:R = ' + rratio + '. ' + rrText });
-
-  // Best emotion
-  var emos = [];
-  for (var i = 0; i < trades.length; i++) {
-    if (trades[i].emotion && emos.indexOf(trades[i].emotion) === -1) emos.push(trades[i].emotion);
+  var sorted=trades.slice().sort(function(a,b){return a.date>b.date?-1:1;});
+  var tbody=document.getElementById('tax-tbody'),html='';
+  for(var i=0;i<sorted.length;i++){
+    var t=sorted[i],gross=calcPnl(t),tax=calcTax(t.entry,t.exit,t.qty),net=calcNetPnl(t);
+    html+='<tr><td class="mono">'+t.date+'</td><td class="mono">'+(t.entryTime||'—')+' → '+(t.exitTime||'—')+'</td><td style="font-weight:600">'+t.index+'</td><td><span class="badge '+(t.type==='CALL'?'bcall':'bput')+'">'+t.type+'</span></td>';
+    html+='<td class="'+(gross>=0?'pnl-w':'pnl-l')+'">'+fmtS(gross)+'</td>';
+    html+='<td style="color:#ef4444;font-family:JetBrains Mono,monospace;font-size:11px">-'+fmt(tax.stt)+'</td>';
+    html+='<td style="color:#ef4444;font-family:JetBrains Mono,monospace;font-size:11px">-'+fmt(tax.brokerage)+'</td>';
+    html+='<td style="color:#ef4444;font-family:JetBrains Mono,monospace;font-size:11px">-'+fmt(tax.gst)+'</td>';
+    html+='<td style="color:#ef4444;font-family:JetBrains Mono,monospace;font-size:11px">-'+fmt(tax.sebi)+'</td>';
+    html+='<td style="font-family:JetBrains Mono,monospace;font-size:11px;font-weight:600;color:#ef4444">-'+fmt(tax.total)+'</td>';
+    html+='<td class="'+(net>=0?'pnl-w':'pnl-l')+'" style="font-size:13px">'+fmtS(net)+'</td>';
+    html+='</tr>';
   }
-  if (emos.length) {
-    var bestEmo = null, bestEmoWr = -1;
-    for (var ei = 0; ei < emos.length; ei++) {
-      var em = emos[ei];
-      var et = trades.filter(function(t){ return t.emotion === em; });
-      var ew = et.filter(function(t){ return t.result === 'WIN'; }).length;
-      var ewr = et.length ? ew / et.length : 0;
-      if (ewr > bestEmoWr) { bestEmoWr = ewr; bestEmo = em; }
-    }
-    items.push({ ico: '🧠', title: 'Emotional Edge', bg: '#ecfdf5', text: 'You perform best when "' + bestEmo + '" with a ' + Math.round(bestEmoWr * 100) + '% win rate. Track your emotions consistently to improve performance.' });
-  }
-
-  // Best strategy
-  var bestS = getBestStrategy();
-  if (bestS.name) {
-    items.push({ ico: '🏆', title: 'Best Strategy', bg: '#fffbeb', text: '"' + bestS.name + '" is your most reliable strategy with a ' + bestS.wr + '% win rate. Consider increasing allocation when conditions align.' });
-  }
-
-  // Recent form
-  var sorted = trades.slice().sort(function(a,b){ return a.date > b.date ? 1 : -1; });
-  var recentN = Math.min(5, sorted.length);
-  var recentW = sorted.slice(-recentN).filter(function(t){ return t.result === 'WIN'; }).length;
-  var recentPct = Math.round((recentW / recentN) * 100);
-  var recentText = recentPct >= 60 ? 'In good form! Stay disciplined.' : 'Below average recently. Consider reducing position size or taking a break.';
-  items.push({ ico: '📈', title: 'Recent Form', bg: recentPct >= 60 ? '#ecfdf5' : '#fef2f2', text: 'Last ' + recentN + ' trades: ' + recentPct + '% win rate. ' + recentText });
-
-  // Total PnL insight
-  var totalPnl = getTotalPnl();
-  var pnlText = totalPnl >= 0 ? 'You are profitable overall. Keep maintaining discipline.' : 'Overall in a loss. Review losing trades for patterns to avoid.';
-  items.push({ ico: totalPnl >= 0 ? '💰' : '📉', title: 'Overall P&L', bg: totalPnl >= 0 ? '#ecfdf5' : '#fef2f2', text: 'Total net P&L is ' + fmtS(totalPnl) + ' across ' + trades.length + ' trades. ' + pnlText });
-
-  var html = '';
-  for (var ii = 0; ii < items.length; ii++) {
-    var item = items[ii];
-    html += '<div class="ins-card">';
-    html += '<div class="ins-ico" style="background:' + item.bg + '">' + item.ico + '</div>';
-    html += '<div><div class="ins-title">' + item.title + '</div><div class="ins-text">' + item.text + '</div></div>';
-    html += '</div>';
-  }
-  wrap.innerHTML = html;
+  tbody.innerHTML=html;
 }
 
 // ── STRATEGIES ──
 function renderStrategies() {
-  var html = '<div class="sg">';
-  for (var i = 0; i < strategies.length; i++) {
-    var s = strategies[i];
-    var st = trades.filter(function(t){ return t.strategy === s; });
-    var w = st.filter(function(t){ return t.result === 'WIN'; }).length;
-    var wr = st.length ? Math.round((w / st.length) * 100) : null;
-    var col = wr === null ? '#9ca3af' : wr >= 60 ? '#10b981' : wr >= 40 ? '#f59e0b' : '#ef4444';
-    var pnlT = st.reduce(function(acc, t){ return acc + calcPnl(t); }, 0);
-    var idx = i;
-    html += '<div class="sc">';
-    html += '<div class="sc-name">' + s + '</div>';
-    html += '<div class="sc-wr" style="color:' + col + '">' + (wr !== null ? wr + '%' : 'N/A') + '</div>';
-    html += '<div class="sc-bar"><div class="sc-bfill" style="width:' + (wr || 0) + '%;background:' + col + '"></div></div>';
-    html += '<div class="sc-meta">' + (st.length ? w + 'W · ' + (st.length - w) + 'L · ' + st.length + ' trades' : 'No trades yet') + '</div>';
-    if (st.length) html += '<div style="font-family:JetBrains Mono,monospace;font-size:10px;font-weight:600;color:' + (pnlT >= 0 ? '#10b981' : '#ef4444') + ';margin-top:3px">' + fmtS(pnlT) + '</div>';
-    html += '<button class="sc-del" onclick="delStrategy(' + idx + ')">× Remove</button>';
-    html += '</div>';
+  var html='<div class="sg">';
+  for(var i=0;i<strategies.length;i++){
+    var s=strategies[i],st=trades.filter(function(t){return t.strategy===s;}),w=st.filter(function(t){return t.result==='WIN';}).length;
+    var wr=st.length?Math.round((w/st.length)*100):null,col=wr===null?'#9ca3af':wr>=60?'#10b981':wr>=40?'#f59e0b':'#ef4444';
+    var pnlT=st.reduce(function(acc,t){return acc+calcPnl(t);},0);
+    var idx=i;
+    html+='<div class="sc"><div class="sc-name">'+s+'</div><div class="sc-wr" style="color:'+col+'">'+(wr!==null?wr+'%':'N/A')+'</div><div class="sc-bar"><div class="sc-bfill" style="width:'+(wr||0)+'%;background:'+col+'"></div></div><div class="sc-meta">'+(st.length?w+'W · '+(st.length-w)+'L · '+st.length+' trades':'No trades yet')+'</div>'+(st.length?'<div style="font-family:JetBrains Mono,monospace;font-size:10px;font-weight:600;color:'+(pnlT>=0?'#10b981':'#ef4444')+';margin-top:3px">'+fmtS(pnlT)+'</div>':'')+'<button class="sc-del" onclick="delStrategy('+idx+')">× Remove</button></div>';
   }
-  html += '</div>';
-  document.getElementById('strat-grid').innerHTML = html;
+  html+='</div>';
+  document.getElementById('strat-grid').innerHTML=html;
 }
 
 function addStrategy() {
-  var inp = document.getElementById('new-strat');
-  var val = inp.value.trim();
-  if (!val) return;
-  if (strategies.indexOf(val) !== -1) { showNotif('Strategy already exists', 'error'); return; }
-  strategies.push(val);
-  save();
-  inp.value = '';
-  renderStrategies();
-  rebuildStratToggles();
-  showNotif('"' + val + '" added!', 'success');
+  var inp=document.getElementById('new-strat'),val=inp.value.trim();
+  if(!val) return;
+  if(strategies.indexOf(val)!==-1){showNotif('Already exists','error');return;}
+  strategies.push(val);save();inp.value='';renderStrategies();rebuildStratToggles();showNotif('"'+val+'" added!','success');
 }
 
 function delStrategy(idx) {
-  if (strategies.length <= 1) { showNotif('Must have at least 1 strategy', 'error'); return; }
-  strategies.splice(idx, 1);
-  save();
-  renderStrategies();
-  rebuildStratToggles();
-  showNotif('Strategy removed', 'success');
+  if(strategies.length<=1){showNotif('Must have at least 1','error');return;}
+  strategies.splice(idx,1);save();renderStrategies();rebuildStratToggles();showNotif('Removed','success');
 }
 
 // ── MODAL ──
 function openModal() {
-  document.getElementById('edit-id').value = '';
-  document.getElementById('modal-title').textContent = 'Log New Trade';
-  document.getElementById('f-date').value = new Date().toISOString().split('T')[0];
-  document.getElementById('f-index').value = 'NIFTY 50';
-  document.getElementById('f-entry').value = '';
-  document.getElementById('f-exit').value = '';
-  document.getElementById('f-qty').value = '';
-  document.getElementById('f-reason').value = '';
-  document.getElementById('f-notes').value = '';
-  document.getElementById('custom-idx-wrap').style.display = 'none';
-  setType('CALL');
-  setResult('WIN');
-  setEmoByVal('Confident');
-  rebuildStratToggles();
-  document.getElementById('pnl-prev').style.display = 'none';
+  document.getElementById('edit-id').value='';
+  document.getElementById('modal-title').textContent='Log New Trade';
+  document.getElementById('f-date').value=new Date().toISOString().split('T')[0];
+  document.getElementById('f-index').value='NIFTY 50';
+  document.getElementById('f-entry-time').value='09:15';
+  document.getElementById('f-exit-time').value='15:30';
+  document.getElementById('f-entry').value='';
+  document.getElementById('f-exit').value='';
+  document.getElementById('f-qty').value='';
+  document.getElementById('f-reason').value='';
+  document.getElementById('f-notes').value='';
+  document.getElementById('custom-idx-wrap').style.display='none';
+  setType('CALL');setResult('WIN');setEmoByVal('Confident');rebuildStratToggles();
+  document.getElementById('pnl-prev').style.display='none';
+  document.getElementById('tax-preview-box').style.display='none';
   document.getElementById('overlay').classList.add('open');
+}
+
+function openModalForDate(date) {
+  openModal();
+  document.getElementById('f-date').value = date;
 }
 
 function openEdit(id) {
-  var t = null;
-  for (var i = 0; i < trades.length; i++) { if (trades[i].id === id) { t = trades[i]; break; } }
-  if (!t) return;
-  document.getElementById('edit-id').value = id;
-  document.getElementById('modal-title').textContent = 'Edit Trade';
-  document.getElementById('f-date').value = t.date;
-  document.getElementById('f-index').value = t.index;
-  document.getElementById('f-entry').value = t.entry;
-  document.getElementById('f-exit').value = t.exit;
-  document.getElementById('f-qty').value = t.qty;
-  document.getElementById('f-reason').value = t.reason || '';
-  document.getElementById('f-notes').value = t.notes || '';
-  document.getElementById('custom-idx-wrap').style.display = 'none';
-  setType(t.type);
-  setResult(t.result);
-  setEmoByVal(t.emotion || 'Confident');
-  rebuildStratToggles(t.strategy);
+  var t=null;for(var i=0;i<trades.length;i++){if(trades[i].id===id){t=trades[i];break;}}
+  if(!t) return;
+  document.getElementById('edit-id').value=id;
+  document.getElementById('modal-title').textContent='Edit Trade';
+  document.getElementById('f-date').value=t.date;
+  document.getElementById('f-index').value=t.index;
+  document.getElementById('f-entry-time').value=t.entryTime||'09:15';
+  document.getElementById('f-exit-time').value=t.exitTime||'15:30';
+  document.getElementById('f-entry').value=t.entry;
+  document.getElementById('f-exit').value=t.exit;
+  document.getElementById('f-qty').value=t.qty;
+  document.getElementById('f-reason').value=t.reason||'';
+  document.getElementById('f-notes').value=t.notes||'';
+  document.getElementById('custom-idx-wrap').style.display='none';
+  setType(t.type);setResult(t.result);setEmoByVal(t.emotion||'Confident');rebuildStratToggles(t.strategy);
   updatePreview();
   document.getElementById('overlay').classList.add('open');
 }
 
-function closeModal() {
-  document.getElementById('overlay').classList.remove('open');
-}
-
-function onIndexChange() {
-  var v = document.getElementById('f-index').value;
-  document.getElementById('custom-idx-wrap').style.display = v === 'CUSTOM' ? 'block' : 'none';
-}
+function closeModal() { document.getElementById('overlay').classList.remove('open'); }
+function onIndexChange() { var v=document.getElementById('f-index').value; document.getElementById('custom-idx-wrap').style.display=v==='CUSTOM'?'block':'none'; }
 
 function setType(t) {
-  document.getElementById('f-type').value = t;
-  document.getElementById('btn-call').className = 'tg-btn' + (t === 'CALL' ? ' tg-call' : '');
-  document.getElementById('btn-put').className = 'tg-btn' + (t === 'PUT' ? ' tg-put' : '');
+  document.getElementById('f-type').value=t;
+  document.getElementById('btn-call').className='tg-btn'+(t==='CALL'?' tg-call':'');
+  document.getElementById('btn-put').className='tg-btn'+(t==='PUT'?' tg-put':'');
   updatePreview();
 }
-
 function setResult(r) {
-  document.getElementById('f-result').value = r;
-  document.getElementById('btn-win').className = 'tg-btn' + (r === 'WIN' ? ' tg-win' : '');
-  document.getElementById('btn-loss').className = 'tg-btn' + (r === 'LOSS' ? ' tg-loss' : '');
+  document.getElementById('f-result').value=r;
+  document.getElementById('btn-win').className='tg-btn'+(r==='WIN'?' tg-win':'');
+  document.getElementById('btn-loss').className='tg-btn'+(r==='LOSS'?' tg-loss':'');
   updatePreview();
 }
-
 function setEmo(btn) {
-  var val = btn.textContent;
-  document.getElementById('f-emotion').value = val;
-  var btns = document.querySelectorAll('#emo-toggles .tg-btn');
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].className = 'tg-btn' + (btns[i].textContent === val ? ' tg-emo' : '');
-  }
+  var val=btn.textContent;document.getElementById('f-emotion').value=val;
+  var btns=document.querySelectorAll('#emo-toggles .tg-btn');
+  for(var i=0;i<btns.length;i++) btns[i].className='tg-btn'+(btns[i].textContent===val?' tg-emo':'');
 }
-
 function setEmoByVal(val) {
-  document.getElementById('f-emotion').value = val;
-  var btns = document.querySelectorAll('#emo-toggles .tg-btn');
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].className = 'tg-btn' + (btns[i].textContent === val ? ' tg-emo' : '');
-  }
+  document.getElementById('f-emotion').value=val;
+  var btns=document.querySelectorAll('#emo-toggles .tg-btn');
+  for(var i=0;i<btns.length;i++) btns[i].className='tg-btn'+(btns[i].textContent===val?' tg-emo':'');
 }
-
 function rebuildStratToggles(selected) {
-  var wrap = document.getElementById('strat-toggles');
-  var html = '';
-  for (var i = 0; i < strategies.length; i++) {
-    var s = strategies[i];
-    var idx = i;
-    html += '<button class="tg-btn" onclick="pickStrat(' + idx + ')">' + s + '</button>';
-  }
-  wrap.innerHTML = html;
-  pickStrat(selected ? strategies.indexOf(selected) : 0);
+  var wrap=document.getElementById('strat-toggles'),html='';
+  for(var i=0;i<strategies.length;i++) html+='<button class="tg-btn" onclick="pickStrat('+i+')">'+strategies[i]+'</button>';
+  wrap.innerHTML=html;
+  pickStrat(selected?strategies.indexOf(selected):0);
+}
+function pickStrat(idx) {
+  if(idx<0) idx=0;
+  var s=strategies[idx];if(!s) return;
+  document.getElementById('f-strategy').value=s;
+  var btns=document.querySelectorAll('#strat-toggles .tg-btn');
+  for(var i=0;i<btns.length;i++) btns[i].className='tg-btn'+(i===idx?' tg-strat':'');
 }
 
-function pickStrat(idx) {
-  if (idx < 0) idx = 0;
-  var s = strategies[idx];
-  if (!s) return;
-  document.getElementById('f-strategy').value = s;
-  var btns = document.querySelectorAll('#strat-toggles .tg-btn');
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].className = 'tg-btn' + (i === idx ? ' tg-strat' : '');
-  }
+function toggleTaxDetail() {
+  taxDetailOpen=!taxDetailOpen;
+  document.getElementById('tax-detail').style.display=taxDetailOpen?'block':'none';
+  document.querySelector('.tax-toggle').textContent=taxDetailOpen?'Hide Details':'Show Details';
 }
 
 function updatePreview() {
-  var entry = parseFloat(document.getElementById('f-entry').value);
-  var exit = parseFloat(document.getElementById('f-exit').value);
-  var qty = parseFloat(document.getElementById('f-qty').value);
-  var result = document.getElementById('f-result').value;
-  var prev = document.getElementById('pnl-prev');
-  if (entry && exit && qty) {
-    var pnl = Math.abs(exit - entry) * qty;
-    var isWin = result === 'WIN';
-    prev.style.display = 'flex';
-    prev.className = 'pnl-prev ' + (isWin ? 'win' : 'loss');
-    document.getElementById('pnl-prev-val').textContent = (isWin ? '+' : '-') + '\u20B9' + Math.round(pnl).toLocaleString('en-IN');
+  var entry=parseFloat(document.getElementById('f-entry').value);
+  var exit=parseFloat(document.getElementById('f-exit').value);
+  var qty=parseFloat(document.getElementById('f-qty').value);
+  var result=document.getElementById('f-result').value;
+  var prev=document.getElementById('pnl-prev');
+  var taxBox=document.getElementById('tax-preview-box');
+  if(entry&&exit&&qty){
+    var grossPnl=Math.abs(exit-entry)*qty;
+    var isWin=result==='WIN';
+    var signedGross=isWin?grossPnl:-grossPnl;
+    var tax=calcTax(entry,exit,qty);
+    var netPnl=signedGross-tax.total;
+    prev.style.display='flex';
+    prev.className='pnl-prev '+(isWin?'win':'loss');
+    document.getElementById('pnl-prev-val').textContent=(isWin?'+':'-')+'\u20B9'+Math.round(grossPnl).toLocaleString('en-IN');
+    document.getElementById('pnl-prev-net').textContent='Net after tax: '+(netPnl>=0?'+':'')+'\u20B9'+Math.round(netPnl).toLocaleString('en-IN');
+    document.getElementById('pnl-prev-net').style.color=netPnl>=0?'#10b981':'#ef4444';
+    taxBox.style.display='block';
+    document.getElementById('tx-stt').textContent='-\u20B9'+tax.stt.toFixed(2);
+    document.getElementById('tx-brok').textContent='-\u20B9'+tax.brokerage.toFixed(2);
+    document.getElementById('tx-gst').textContent='-\u20B9'+tax.gst.toFixed(2);
+    document.getElementById('tx-sebi').textContent='-\u20B9'+tax.sebi.toFixed(4);
+    document.getElementById('tx-exc').textContent='-\u20B9'+tax.exchange.toFixed(4);
+    document.getElementById('tx-stamp').textContent='-\u20B9'+tax.stamp.toFixed(2);
+    document.getElementById('tx-total').textContent='-\u20B9'+tax.total.toFixed(2);
+    var netEl=document.getElementById('tx-net');
+    netEl.textContent=(netPnl>=0?'+':'')+'\u20B9'+Math.round(netPnl).toLocaleString('en-IN');
+    netEl.style.color=netPnl>=0?'#10b981':'#ef4444';
   } else {
-    prev.style.display = 'none';
+    prev.style.display='none';
+    taxBox.style.display='none';
   }
 }
 
 function saveTrade() {
-  var idxVal = document.getElementById('f-index').value;
-  var customIdx = document.getElementById('f-custom-idx').value.trim();
-  var index = idxVal === 'CUSTOM' ? (customIdx || 'Custom') : idxVal;
-  var date = document.getElementById('f-date').value;
-  var entry = parseFloat(document.getElementById('f-entry').value);
-  var exit = parseFloat(document.getElementById('f-exit').value);
-  var qty = parseFloat(document.getElementById('f-qty').value);
-  if (!date || !entry || !exit || !qty) { showNotif('Fill entry, exit & quantity', 'error'); return; }
-  var trade = {
-    id: parseInt(document.getElementById('edit-id').value) || Date.now(),
-    date: date, index: index,
-    type: document.getElementById('f-type').value,
-    strategy: document.getElementById('f-strategy').value || strategies[0],
-    entry: entry, exit: exit, qty: qty,
-    result: document.getElementById('f-result').value,
-    reason: document.getElementById('f-reason').value,
-    emotion: document.getElementById('f-emotion').value,
-    notes: document.getElementById('f-notes').value
+  var idxVal=document.getElementById('f-index').value;
+  var customIdx=document.getElementById('f-custom-idx').value.trim();
+  var index=idxVal==='CUSTOM'?(customIdx||'Custom'):idxVal;
+  var date=document.getElementById('f-date').value;
+  var entry=parseFloat(document.getElementById('f-entry').value);
+  var exit=parseFloat(document.getElementById('f-exit').value);
+  var qty=parseFloat(document.getElementById('f-qty').value);
+  if(!date||!entry||!exit||!qty){showNotif('Fill entry, exit & quantity','error');return;}
+  var trade={
+    id:parseInt(document.getElementById('edit-id').value)||Date.now(),
+    date:date,index:index,
+    type:document.getElementById('f-type').value,
+    strategy:document.getElementById('f-strategy').value||strategies[0],
+    entry:entry,exit:exit,qty:qty,
+    result:document.getElementById('f-result').value,
+    entryTime:document.getElementById('f-entry-time').value,
+    exitTime:document.getElementById('f-exit-time').value,
+    reason:document.getElementById('f-reason').value,
+    emotion:document.getElementById('f-emotion').value,
+    notes:document.getElementById('f-notes').value
   };
-  var editId = parseInt(document.getElementById('edit-id').value);
-  if (editId) {
-    for (var i = 0; i < trades.length; i++) { if (trades[i].id === editId) { trades[i] = trade; break; } }
-    showNotif('Trade updated!', 'success');
-  } else {
-    trades.push(trade);
-    showNotif('Trade logged!', 'success');
-  }
-  save();
-  closeModal();
-  var activePage = document.querySelector('.page.active');
-  if (activePage) {
-    var pid = activePage.id.replace('page-', '');
-    if (pid === 'dashboard') renderDashboard();
-    else if (pid === 'log') renderLog();
-    else if (pid === 'analytics') renderAnalytics();
-    else if (pid === 'winratio') renderWinRatio();
-    else if (pid === 'histogram') renderHistogram();
-    else if (pid === 'heatmap') renderHeatmap();
-    else if (pid === 'insights') renderInsights();
-    else if (pid === 'strategies') renderStrategies();
-  }
+  var editId=parseInt(document.getElementById('edit-id').value);
+  if(editId){for(var i=0;i<trades.length;i++){if(trades[i].id===editId){trades[i]=trade;break;}}showNotif('Trade updated!','success');}
+  else{trades.push(trade);showNotif('Trade logged!','success');}
+  save();closeModal();
+  var activePage=document.querySelector('.page.active');
+  if(activePage){var pid=activePage.id.replace('page-','');if(pid==='dashboard') renderDashboard();else if(pid==='log') renderLog();else if(pid==='analytics') renderAnalytics();else if(pid==='winratio') renderWinRatio();else if(pid==='histogram') renderHistogram();else if(pid==='heatmap') renderHeatmap();else if(pid==='insights') renderInsights();else if(pid==='tax') renderTax();else if(pid==='strategies') renderStrategies();}
   renderDashboard();
 }
 
 function delTrade(id) {
-  if (!confirm('Delete this trade?')) return;
-  for (var i = 0; i < trades.length; i++) { if (trades[i].id === id) { trades.splice(i, 1); break; } }
-  save();
-  renderLog();
-  showNotif('Trade deleted', 'success');
+  if(!confirm('Delete this trade?')) return;
+  for(var i=0;i<trades.length;i++){if(trades[i].id===id){trades.splice(i,1);break;}}
+  save();renderLog();showNotif('Deleted','success');
 }
 
-function showNotif(msg, type) {
-  type = type || 'success';
-  var n = document.getElementById('notif');
-  n.textContent = (type === 'success' ? '✓ ' : '✕ ') + msg;
-  n.className = 'notif show ' + type;
-  setTimeout(function(){ n.className = 'notif'; }, 3000);
+function showNotif(msg,type) {
+  type=type||'success';var n=document.getElementById('notif');
+  n.textContent=(type==='success'?'✓ ':'✕ ')+msg;
+  n.className='notif show '+type;
+  setTimeout(function(){n.className='notif';},3000);
 }
 
-// ── INIT ──
-window.onload = function() {
-  var d = new Date();
-  document.getElementById('date-chip').textContent = d.toLocaleDateString('en-IN', { weekday: 'short', day: '2-digit', month: 'short', year: 'numeric' });
-  Chart.defaults.color = '#9ca3af';
-  Chart.defaults.font.family = 'JetBrains Mono';
-  rebuildStratToggles();
-  renderDashboard();
+window.onload=function(){
+  var d=new Date();
+  document.getElementById('date-chip').textContent=d.toLocaleDateString('en-IN',{weekday:'short',day:'2-digit',month:'short',year:'numeric'});
+  Chart.defaults.color='#9ca3af';Chart.defaults.font.family='JetBrains Mono';
+  rebuildStratToggles();renderDashboard();
 };
 </script>
 </body>
